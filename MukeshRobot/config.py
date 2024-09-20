@@ -6,7 +6,7 @@ class Config(object):
 
     API_ID = "25614292" # integer value, dont use ""
     API_HASH = "59ee8005ce6b056fa639d956f028eeeb"
-    TOKEN = "6909402640:AAEUXjuibT9DlAl72lSi3JtVFnwUWwG931Q"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    TOKEN = "6909402640:AAErcuUlvVxg7NNbLT-_5SD1j90GkLqVpwE"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 7006715434 # If you dont know, run the bot and do /id in your private chat with it, also an integer
     
     SUPPORT_CHAT = "kittybothub"  # Your own group for support, do not add the @
