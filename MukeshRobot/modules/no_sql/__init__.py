@@ -10,7 +10,7 @@ try:
     client = MongoClient(MONGO_DB_URI)
 except PyMongoError:
     exiter(1)
-main_db = client["MUKESH_ROBOT"]
+main_db = client["MOON_SHINING_ROBOT"]
 
 
 MukeshXdb = main_db
