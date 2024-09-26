@@ -1,82 +1,80 @@
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from pymongo import MongoClient, collection
-from pymongo.errors import PyMongoError
-from MukeshRobot import MONGO_DB_URI
 
-# Create MongoDB async client
+from MukeshRobot import  MONGO_DB_URI
+
 mongo = MongoCli(MONGO_DB_URI)
 Mukeshdb = mongo.MUK_ROB
 
 try:
-    # Create MongoDB synchronous client
     client = MongoClient(MONGO_DB_URI)
 except PyMongoError:
-    exit(1)
-
+    exiter(1)
 main_db = client["MOON_SHINING_ROBOT"]
+
+
 MukeshXdb = main_db
 
 
-def get_collection(name: str) -> collection.Collection:
-    """Get the collection from the database."""
+def get_collection(name: str) -> collection:
+    """ɢᴇᴛ ᴛʜᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴ ғʀᴏᴍ ᴅᴀᴛᴀʙᴀsᴇ."""
     return MukeshXdb[name]
 
 
 class MongoDB:
-    """Class for interacting with the bot's MongoDB database."""
+    """Class for interacting with Bot database."""
 
-    def __init__(self, collection_name: str) -> None:
-        self.collection = MukeshXdb[collection_name]
+    def __init__(self, collection) -> None:
+        self.collection = MukeshXdb[collection]
 
-    # Insert one entry into the collection
-    def insert_one(self, document: dict) -> str:
+    # Insert one entry into collection
+    def insert_one(self, document):
         result = self.collection.insert_one(document)
-        return str(result.inserted_id)
+        return repr(result.inserted_id)
 
-    # Find one entry in the collection
-    def find_one(self, query: dict):
+    # Find one entry from collection
+    def find_one(self, query):
         result = self.collection.find_one(query)
         if result:
             return result
-        return None
+        return False
 
-    # Find all entries matching a query
-    def find_all(self, query: dict = None) -> list:
+    # Find entries from collection
+    def find_all(self, query=None):
         if query is None:
             query = {}
         return list(self.collection.find(query))
 
-    # Count entries in the collection
-    def count(self, query: dict = None) -> int:
+    # Count entries from collection
+    def count(self, query=None):
         if query is None:
             query = {}
         return self.collection.count_documents(query)
 
-    # Delete entries matching a query
-    def delete_one(self, query: dict) -> int:
-        self.collection.delete_one(query)
+    # Delete entry/entries from collection
+    def delete_one(self, query):
+        self.collection.delete_many(query)
         return self.collection.count_documents({})
 
-    # Replace one document in the collection
-    def replace(self, query: dict, new_data: dict) -> tuple:
+    # Replace one entry in collection
+    def replace(self, query, new_data):
         old = self.collection.find_one(query)
         _id = old["_id"]
         self.collection.replace_one({"_id": _id}, new_data)
         new = self.collection.find_one({"_id": _id})
         return old, new
 
-    # Update one document in the collection
-    def update(self, query: dict, update_data: dict) -> tuple:
-        result = self.collection.update_one(query, {"$set": update_data})
+    # Update one entry from collection
+    def update(self, query, update):
+        result = self.collection.update_one(query, {"$set": update})
         new_document = self.collection.find_one(query)
         return result.modified_count, new_document
 
     @staticmethod
     def close():
-        client.close()
+        return client.close()
 
 
-# Ensure MongoDB connection is established at start
 def __connect_first():
     _ = MongoDB("test")
 
