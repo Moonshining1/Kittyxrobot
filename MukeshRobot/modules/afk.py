@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 
 from MukeshRobot import pbot, SUPPORT_CHAT
-from MukeshRobot.modules.sql.afk_db import set_afk, rm_afk, is_afk
+from MukeshRobot.modules.sql.afk_sql import set_afk, rm_afk, is_afk
 from MukeshRobot.modules.no_sql.afk_db import add_afk, remove_afk
 
 # AFK GIF for default replies
