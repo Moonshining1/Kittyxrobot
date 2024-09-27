@@ -9,11 +9,10 @@ from MukeshRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT, pbot
 # Store the bot start time
 START_TIME = datetime.now()
 
-MISHI = [
-    "https://envs.sh/STz.jpg"
-]# Use a single image URL
+# Change MISHI to a string instead of a list
+MISHI = "https://envs.sh/STz.jpg"  # Use a single image URL
 
-# Create the inline keyboard for the reply messag
+# Create the inline keyboard for the reply message
 Mukesh = [
     [
         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/kittyxupdates"),
@@ -21,8 +20,8 @@ Mukesh = [
     ],
     [
         InlineKeyboardButton(
-                text="˹🕸️ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ 🕸️˼",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+            text="˹🕸️ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ 🕸️˼",
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
@@ -63,13 +62,13 @@ async def alive_command(client, m: Message):
 
         # Reply with the alive status message
         await m.reply_photo(
-            photo=MISHI,
+            photo=MISHI,  # Now this is a string
             caption=(
                 f"**Hey {m.from_user.first_name},\n\n"
                 f"I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n"
                 "**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)"
             ),
-            reply_markup=InlineKeyboardMarkup(Mukesh)
+            reply_markup=InlineKeyboardMarkup(Mukesh)  # Correctly use InlineKeyboardMarkup here
         )
     except Exception as e:
         print(f"Error in /alive command: {e}")
