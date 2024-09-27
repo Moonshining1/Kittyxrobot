@@ -1,15 +1,11 @@
-
 import asyncio
-from platform import python_version as pyver
-from datetime import datetime  # To track start time and calculate uptime
+from datetime import datetime
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import filters
+from pyrogram.types import Message
 
-from pyrogram import __version__ as pver
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from telegram import __version__ as lver
-from telethon import __version__ as tver
-
-from MukeshRobot import SUPPORT_CHAT, pbot, BOT_USERNAME, OWNER_ID, BOT_NAME, START_IMG
+from MukeshRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT, pbot
+from MukeshRobot.modules.helper_funcs.misc import paginate_modules
 
 # Store the bot start time
 START_TIME = datetime.now()
@@ -66,9 +62,9 @@ async def alive_command(client, m: Message):
         # Reply with the alive status message
         await m.reply_photo(
             MISHI,
-        caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
-        reply_markup=InlineKeyboardMarkup(Mukesh)
-    )
+            caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
+            reply_markup=InlineKeyboardMarkup(Mukesh)
+        )
     except Exception as e:
         print(f"Error in /alive command: {e}")
         await m.reply("Something went wrong while checking bot status. Please try again later.")
@@ -81,4 +77,3 @@ __help__ = """
 
 ☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
 """
-
