@@ -826,27 +826,25 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-            update.effective_message.reply_photo(
-            "https://envs.sh/S_w.jpg" # Replace with your actual photo URL
-    "» Choose an way to get help from me ✨",
-    reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                    text="• Open in private •",
-                    url="https://t.me/{}?start=help".format(context.bot.username),
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="• Open here •",
-                    callback_data="Main_help",
-                )
-            ],
-        ]
-    ),
-)
-return
+        update.effective_message.reply_photo("https://envs.sh/S_w.jpg","» Choose an way to get help from me ✨",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="• Open in private •",
+                            url="https://t.me/{}?start=help".format(context.bot.username),
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="• Open here •",
+                            callback_data="Main_help",
+                        )
+                    ],
+                ]
+            ),
+        )
+        return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
