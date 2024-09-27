@@ -33,7 +33,6 @@ from MukeshRobot import (
     LOGGER,
     OWNER_ID,
     START_IMG,
-    HELP_IMG,
     SUPPORT_CHAT,
     TOKEN,
     StartTime,
@@ -827,25 +826,27 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_photo(HELP_IMG,"» Wʜᴇʀᴇ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ?.",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="• Open in private •",
-                            url="https://t.me/{}?start=help".format(context.bot.username),
-                        )
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="• Open here •",
-                            callback_data="Main_help",
-                        )
-                    ],
-                ]
-            ),
-        )
-        return
+            update.effective_message.reply_photo(
+            "https://envs.sh/S_w.jpg" # Replace with your actual photo URL
+    "» Choose an way to get help from me ✨",
+    reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text="• Open in private •",
+                    url="https://t.me/{}?start=help".format(context.bot.username),
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    text="• Open here •",
+                    callback_data="Main_help",
+                )
+            ],
+        ]
+    ),
+)
+return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
@@ -997,7 +998,7 @@ def get_settings(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ᴛʜɪs ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs ᴀs ᴡᴇʟʟ ᴀs ʏᴏᴜʀs"
-            msg.reply_photo(HELP_IMG,text,
+            msg.reply_photo(START_IMG,text,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
