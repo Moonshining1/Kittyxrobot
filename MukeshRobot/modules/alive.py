@@ -63,8 +63,12 @@ async def alive_command(client, m: Message):
 
         # Reply with the alive status message
         await m.reply_photo(
-            MISHI,
-            caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
+            photo=MISHI,  # Correctly specify 'photo'
+            caption=(
+                f"**Hey {m.from_user.first_name},\n\n"
+                f"I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n"
+                "**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)"
+            ),
             reply_markup=Mukesh  # Use the InlineKeyboardMarkup object here
         )
     except Exception as e:
@@ -77,5 +81,5 @@ __help__ = """
  ❍ /ping ➛ Check ping status.
  ❍ /stats ➛ Shows overall stats of the bot.
 
-☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɳ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
 """
