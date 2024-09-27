@@ -1,7 +1,7 @@
 import asyncio
 from datetime import datetime
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import filters
+from pyrogram import filters
 from pyrogram.types import Message
 
 from MukeshRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT, pbot
