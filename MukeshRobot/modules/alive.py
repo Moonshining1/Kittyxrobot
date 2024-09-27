@@ -11,21 +11,19 @@ START_TIME = datetime.now()
 
 MISHI = "https://envs.sh/STz.jpg"  # Use a single image URL
 
-# Create the inline keyboard for the reply message
-Mukesh = InlineKeyboardMarkup(
+# Create the inline keyboard for the reply messag
+Mukesh = [
     [
-        [
-            InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/kittyxupdates"),
-            InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        ],
-        [
-            InlineKeyboardButton(
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/kittyxupdates"),
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+    ],
+    [
+        InlineKeyboardButton(
                 text="˹🕸️ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ 🕸️˼",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            ),
-        ],
-    ]
-)
+        ),
+    ],
+]
 
 # Function to calculate uptime
 def get_readable_time():
@@ -69,7 +67,7 @@ async def alive_command(client, m: Message):
                 f"I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n"
                 "**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)"
             ),
-            reply_markup=Mukesh
+            reply_markup=InlineKeyboardMarkup(Mukesh)
         )
     except Exception as e:
         print(f"Error in /alive command: {e}")
