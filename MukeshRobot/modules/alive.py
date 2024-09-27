@@ -9,7 +9,9 @@ from MukeshRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT, pbot
 # Store the bot start time
 START_TIME = datetime.now()
 
-MISHI = "https://envs.sh/STz.jpg"  # Use a single image URL
+MISHI = [
+    "https://envs.sh/STz.jpg"
+]# Use a single image URL
 
 # Create the inline keyboard for the reply messag
 Mukesh = [
