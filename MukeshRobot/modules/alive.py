@@ -42,7 +42,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.1)
     await accha.edit("💤")
     await asyncio.sleep(0.1)
-    await accha.edit("🌪️")
+    await accha.edit("🎉")
 
     await accha.delete()
     await asyncio.sleep(0.3)
@@ -53,7 +53,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.2)
     await m.reply_photo(
         START_IMG,
-        caption=f"""** ✦ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}](f"t.me/{BOT_USERNAME}") ✦**\n\n❍ **ʟɪʙʀᴀʀʏ ➛** `{lver}`\n❍ **ᴛᴇʟᴇᴛʜᴏɴ ➛** `{tver}`\n❍ **ᴘʏʀᴏɢʀᴀᴍ ➛** `{pver}`\n❍ **ᴘʏᴛʜᴏɴ ➛** `{pyver()}`\n\n❍ **ᴍᴀᴅᴇ ʙʏ ➛** [🇲σ᭡፝֟ɳ🌙](tg://user?id={OWNER_ID})""",
+        caption=f"""**Hey {}/n/n I am [{BOT_NAME}](f"t.me/{BOT_USERNAME}") alive and working since {2} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
         reply_markup=InlineKeyboardMarkup(Mukesh)
     )
 
