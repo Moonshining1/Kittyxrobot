@@ -9,9 +9,8 @@ from telethon import __version__ as tver
 
 from MukeshRobot import SUPPORT_CHAT, pbot, BOT_USERNAME, OWNER_ID, BOT_NAME, START_IMG
 
-MISHI = [
-    "https://envs.sh/STz.jpg",
-]
+# Change MISHI to a single image URL instead of a list
+MISHI = "https://envs.sh/STz.jpg"  # Use a single image URL
 
 Mukesh = [
     [
@@ -29,9 +28,9 @@ Mukesh = [
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
     await m.delete()
-    accha = await m.reply("🌙")
+    accha = await m.reply("🐳")
     await asyncio.sleep(0.2)
-    await accha.edit("🐬")
+    await accha.edit("🐋")
     await asyncio.sleep(0.1)
     await accha.edit("💤")
     await asyncio.sleep(0.1)
@@ -50,7 +49,7 @@ async def restart(client, m: Message):
 
     # Replace the empty placeholder {} with the message sender's first name or any other value.
     await m.reply_photo(
-        MISHI,
+        MISHI,  # Use a single image URL from MISHI
         caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {Uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
         reply_markup=InlineKeyboardMarkup(Mukesh)
     )
