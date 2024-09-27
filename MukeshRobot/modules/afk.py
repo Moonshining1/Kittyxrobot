@@ -7,7 +7,7 @@ from MukeshRobot.modules.sql.afk_sql import set_afk, rm_afk, is_afk
 from MukeshRobot.modules.no_sql.afk_db import add_afk, remove_afk
 
 # AFK GIF for default replies
-AFK_GIF = "https://giphy.com/gifs/bear-hugging-teddy-17Q92poP1qJwI"
+AFK_GIF = "https://giphy.com/gifs/LjphWQODLHvEbY6KzC"
 
 # Command to set AFK status with an optional reason and media
 @pbot.on_message(filters.command("afk"))
