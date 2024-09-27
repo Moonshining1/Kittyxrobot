@@ -78,21 +78,22 @@ def main():
 if __name__ == "__main__":
     main()
 
-  __help__ = """
+# Helper text for the downloader module
+__help__ = """
 » Available commands for Downloader 
 
-● Youtube Work only in Pm
-Just send me link and wait for me to send post :)
+● Youtube Work only in PM
+Just send me the link and wait for me to send the post :)
 
 ● Pinterest
-Just send me link and wait for me to send post :)
+Just send me the link and wait for me to send the post :)
 Example - https://in.pinterest.com/pin/1117455726273676254/
 
 ● Twitter and Facebook
-For downloading from any supported site like twitter facebook use, /sdl <link>
+For downloading from any supported site like Twitter or Facebook, use /sdl <link>
 Example - /sdl https://twitter.com/i/status/1713856915883937995
 
 (✿◠‿◠)
- """
+"""
 
-__mod_name__ = "Downloade"
+__mod_name__ = "Downloader"
