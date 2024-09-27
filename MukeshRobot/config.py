@@ -7,7 +7,6 @@ class Config(object):
     
     SUPPORT_CHAT = "" 
     START_IMG = ""
-    HELP_IMG = ""
     EVENT_LOGS = ()
     MONGO_DB_URI= ""
    
