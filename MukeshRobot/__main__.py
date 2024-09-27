@@ -33,6 +33,7 @@ from MukeshRobot import (
     LOGGER,
     OWNER_ID,
     START_IMG,
+    HELP_IMG,
     SUPPORT_CHAT,
     TOKEN,
     StartTime,
@@ -111,7 +112,7 @@ HELP_STRINGS = f"""
 DONATE_STRING = f"""ʜᴇʏ ʙᴀʙʏ,
   ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
 
-ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @kittybothub ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @kittyxupdates ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
+ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @Kittyxgang ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @kittyxupdates ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -403,7 +404,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="⭐ Support ⭐", url=f"https://t.me/+fPsCUlG964E5MzY1"
+                            text="⭐ Support ⭐", url=f"https://t.me/+vhymK8YMHA5iNTU9"
                         ),
                         InlineKeyboardButton(
                             text="🥀 Update 🥀", url=f"t.me/kittyxupdates"
@@ -414,7 +415,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="👩‍💻 Developer 👩‍💻", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
-                            text="💡 Github 💡", url="https://t.me/kittybothub"
+                            text="💡 Github 💡", url="https://t.me/Kittyxgang"
                         ),
                     ],
                     [
@@ -514,7 +515,7 @@ I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonsh
                [
                     [
                         InlineKeyboardButton(text="🇲σ᭡፝֟ɳ🌙", url=f"https://t.me/About_ur_Moonshining/5"),
-                        InlineKeyboardButton(text="Owner's clan 🎄", url=f"https://t.me/+fPsCUlG964E5MzY1") 
+                        InlineKeyboardButton(text="Owner's clan 🎄", url=f"https://t.me/+vhymK8YMHA5iNTU9") 
                     ],                    
                     [
                         InlineKeyboardButton(text="🎄 Galaxy 🎄", callback_data="moon_"),
@@ -544,12 +545,12 @@ For more info about kitty updates check website 🎄👀""",parse_mode=ParseMode
             reply_markup=InlineKeyboardMarkup(
                [
                     [
-                        InlineKeyboardButton(text="⭐ Support ⭐", url=f"https://t.me/+fPsCUlG964E5MzY1"),
+                        InlineKeyboardButton(text="⭐ Support ⭐", url=f"https://t.me/+vhymK8YMHA5iNTU9"),
                         InlineKeyboardButton(text="🥀 Update 🥀", url=f"t.me/kittyxupdates")
                     ],                    
                     [
                         InlineKeyboardButton(text="👩‍💻 Developer 👩‍💻", callback_data="advance_help"),
-                        InlineKeyboardButton(text="💡 Github 💡", url="https://t.me/kittybothub") 
+                        InlineKeyboardButton(text="💡 Github 💡", url="https://t.me/kittyxgang") 
                     ],
                     [InlineKeyboardButton(text="◁", callback_data="mukesh_"),]
                ]
@@ -587,7 +588,7 @@ For more info about kitty updates check support 🎄👀
                 [
                     [
                         InlineKeyboardButton(
-                            text="🍻 24/7 𝐂ɦเℓℓ 🥂", url=f"https://t.me/+fPsCUlG964E5MzY1"
+                            text="🍻 24/7 𝐂ɦเℓℓ 🥂", url=f"https://t.me/+vhymK8YMHA5iNTU9"
                         ),
                         InlineKeyboardButton(
                             text="ᴋɪᴛᴛʏ ᴜᴘᴅᴀᴛᴇs🥀", url=f"t.me/kittyxupdates"
@@ -598,7 +599,7 @@ For more info about kitty updates check support 🎄👀
                             text="👨‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ 👨‍💻", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
-                            text="Share your query💡", url="https://t.me/kittybothub"
+                            text="Share your query💡", url="https://t.me/kittyxgang"
                         ),
                     ],
                     [
@@ -627,7 +628,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
  ᴛʜɪs ɪs {BOT_NAME},
 ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://t.me/kittybothub)
+*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://t.me/kittyxgang)
 
 Gaya tha kya yaha chhod ke 😂😂?
 """,
@@ -637,7 +638,7 @@ Gaya tha kya yaha chhod ke 😂😂?
                 [
                     [
                         InlineKeyboardButton(text="Developer 👩‍💻", callback_data="advance_help"),
-                        InlineKeyboardButton(text="• sᴏᴜʀᴄᴇ •", url=f"https://t.me/+fPsCUlG964E5MzY1") 
+                        InlineKeyboardButton(text="• sᴏᴜʀᴄᴇ •", url=f"https://t.me/+vhymK8YMHA5iNTU9") 
                     ],
                     [InlineKeyboardButton(text="• Back •", callback_data="mukesh_")]
                 ]
@@ -826,19 +827,19 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_photo(START_IMG,"» Wʜᴇʀᴇ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ?.",
+        update.effective_message.reply_photo(HELP_IMG,"» Wʜᴇʀᴇ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ?.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴛᴀʀᴛ ɪɴ ᴘʀɪᴠᴀᴛᴇ",
+                            text="• Open in private •",
                             url="https://t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
-                            callback_data="help_back",
+                            text="• Open here •",
+                            callback_data="Main_help",
                         )
                     ],
                 ]
@@ -996,7 +997,7 @@ def get_settings(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ᴛʜɪs ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs ᴀs ᴡᴇʟʟ ᴀs ʏᴏᴜʀs"
-            msg.reply_photo(START_IMG,text,
+            msg.reply_photo(HELP_IMG,text,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
