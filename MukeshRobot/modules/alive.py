@@ -7,14 +7,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telegram import __version__ as lver
 from telethon import __version__ as tver
 
-from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID,BOT_NAME,START_IMG
+from MukeshRobot import SUPPORT_CHAT, pbot, BOT_USERNAME, OWNER_ID, BOT_NAME, START_IMG
 
 MISHI = [
-    "https://telegra.ph/file/e2e2b8f98caa698fa639d.jpg",
-    "https://telegra.ph/file/2748bea032f761d7e19ef.jpg",
-    "https://telegra.ph/file/99b11ca3d972fc46001db.jpg",
-    "https://telegra.ph/file/541e75860e2126a153c18.jpg",
-    "https://telegra.ph/file/2ac48eb1a970b615a0256.jpg",
+    "https://envs.sh/STz.jpg",
 ]
 
 Mukesh = [
@@ -29,9 +25,6 @@ Mukesh = [
         ),
     ],
 ]
-
-
-
 
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
@@ -51,9 +44,14 @@ async def restart(client, m: Message):
     )
     await umm.delete()
     await asyncio.sleep(0.2)
+
+    # Add a value for 'Uptime', replace with actual uptime or calculation.
+    Uptime = "2 hours"
+
+    # Replace the empty placeholder {} with the message sender's first name or any other value.
     await m.reply_photo(
-        START_IMG,
-        caption=f"""**Hey {}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {Uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
+        MISHI,
+        caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {Uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
         reply_markup=InlineKeyboardMarkup(Mukesh)
     )
 
@@ -64,6 +62,4 @@ __help__ = """
  ❍ /stats : sʜᴏᴡs ᴛʜᴇ ᴏᴠᴇʀᴀʟʟ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 
 ☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
- """
-
-    
+"""
