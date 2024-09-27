@@ -75,16 +75,11 @@ PM_START_TEX = """
 
 
 PM_START_TEXT = """ 
-*❖ нᴇʏ* {} 
-❖ ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ ! 
-•─┈─┈─┈─┈─┈─┈─┈─┈─┈─┈─• 
-❍ ɪ ᴀᴍ ˹𝐊íԵԵყ ✘ 𝙼ᴜsɪᴄ˼
-❍ ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs 
-•─┈─┈─┈─┈─┈─┈─┈─┈─┈─┈─• 
-❖ ɪ ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ʙᴏᴛ 
-❖ ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴀɪ ᴄʜᴀᴛʙᴏᴛ 
-❖ A powerful stable and cute telegram music and management bot 
-•─┈─┈─┈─┈─┈─┈─┈─┈─┈─┈─•
+*Hi* {} 
+Nice to meet you !
+
+I am  ˹𝐊íԵԵყ ✘ 𝙼ᴜsɪᴄ˼
+A powerful stable and cute telegram music and management bot.
 """
 
 buttons = [
