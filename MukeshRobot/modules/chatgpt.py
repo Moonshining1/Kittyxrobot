@@ -1,58 +1,28 @@
 import requests
-from MukeshRobot import telethn as tbot
-from MukeshRobot.events import register
+from .. import pbot as Mukesh,BOT_NAME,BOT_USERNAME
+import time
+from pyrogram.enums import ChatAction, ParseMode
+from pyrogram import filters
+from MukeshAPI import api
+@Mukesh.on_message(filters.command(["chatgpt","ai","ask"],  prefixes=["+", ".", "/", "-", "?", "$","#","&"]))
+async def chat_gpt(bot, message):
+    
+    try:
+        await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
+        if len(message.command) < 2:
+            await message.reply_text(
+            "Example:**\n\n`/chatgpt Where is TajMahal?`")
+        else:
+            a = message.text.split(' ', 1)[1]
+            r=api.gemini(a)["results"]
+            await message.reply_text(f" {r} \n\n🎉ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{BOT_USERNAME} ", parse_mode=ParseMode.MARKDOWN)     
+    except Exception as e:
+        await message.reply_text(f"**ᴇʀʀᴏʀ: {e} ")
 
-GPT_API_URL = "https://chatgpt.apinepdev.workers.dev"
-
-
-@register(pattern="^/gjjkk (.*)")
-async def chat_gpt(event):
-    if event.fwd_from:
-        return
-
-    query = event.pattern_match.group(1)
-
-    if query:
-        # Send "Please wait" message
-        processing_message = await event.reply("💭")
-
-        try:
-            # Make a request to GPT API
-            response = requests.get(f"{GPT_API_URL}/?question={query}")
-
-            if response.status_code == 200:
-                # Extract the answer from the API response
-                result = response.json()
-
-                # Check if "join" key is present and remove it
-                if "join" in result:
-                    del result["join"]
-
-                # Add signature to the answer
-                answer = result.get("answer", "❍ ɴᴏ ᴀɴsᴡᴇʀ ʀᴇᴄᴇɪᴠᴇᴅ ғʀᴏᴍ ᴄʜᴀᴛ ᴀɪ.")
-                signature = "\n\n❍ ᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛ [𝐊íԵԵყ](https://t.me/KittyxMusic_bot)"
-                reply_message = answer + signature
-
-                # Edit the "Please wait" message with the final answer
-                await processing_message.edit(reply_message)
-            else:
-                # If there's an error with the API, inform the user
-                await processing_message.edit("Error communicating with ChatGPT API.")
-        except requests.exceptions.RequestException as e:
-            # Handle network-related errors
-            await processing_message.edit(f"Error: {str(e)}. Please try again later.")
-        except Exception as e:
-            # Handle unexpected errors
-            await processing_message.edit(f"Unexpected error: {str(e)}. Please try again later.")
-    else:
-        # Provide information about the correct command format
-        await event.reply("❍ ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ǫᴜᴇsᴛɪᴏɴ after /ask ᴄᴏᴍᴍᴀɴᴅ.\n\n❍ ғᴏʀ ᴇxᴀᴍᴘʟᴇ ➛ /ask ᴡʜᴀᴛ ɪs ᴛʜᴇ ᴍᴇᴀɴɪɴɢ ᴏғ ʟɪғᴇ ?")
-
-
-__mod_name__ = "ᴄʜᴀᴛ-ᴀɪ"
+__mod_name__ = "Cʜᴀᴛɢᴘᴛ"
 __help__ = """
- ❍ /ask  *➛* ʀᴇᴘʟʏ ᴛo ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ 💭
- ❍ /gpt - ᴀᴄᴄᴇss ɢᴘᴛ ғᴜɴᴄᴛɪᴏɴᴀʟɪᴛʏ.
+ Cʜᴀᴛɢᴘᴛ ᴄᴀɴ ᴀɴsᴡᴇʀ ʏᴏᴜʀ ǫᴜᴇsᴛɪᴏɴ  ᴀɴᴅ sʜᴏᴡs ʏᴏᴜ ᴛʜᴇ ʀᴇsᴜʟᴛ
 
- ☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
-  """
+ ❍ /chatgpt  *:* ʀᴇᴘʟʏ ᴛo ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ
+ 
+ """
