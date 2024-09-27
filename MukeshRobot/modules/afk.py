@@ -98,10 +98,6 @@ async def list_afk_users(client, message: Message):
     else:
         await message.reply("No users are currently AFK.")
 
-# Command handler setup for Afk command
-Afk_HANDLER = CommandHandler("afk", set_afk_status, run_async=True)
-dispatcher.add_handler(Afk_HANDLER)
-
 # Help text for the module
 __help__ = """
 » Available commands for AFK:
