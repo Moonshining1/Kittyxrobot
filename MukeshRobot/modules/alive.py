@@ -1,5 +1,6 @@
 import asyncio
 from platform import python_version as pyver
+from datetime import datetime  # To track start time and calculate uptime
 
 from pyrogram import __version__ as pver
 from pyrogram import filters
@@ -9,7 +10,9 @@ from telethon import __version__ as tver
 
 from MukeshRobot import SUPPORT_CHAT, pbot, BOT_USERNAME, OWNER_ID, BOT_NAME, START_IMG
 
-# Change MISHI to a single image URL instead of a list
+# Store the bot start time
+START_TIME = datetime.now()
+
 MISHI = "https://envs.sh/STz.jpg"  # Use a single image URL
 
 Mukesh = [
@@ -24,6 +27,14 @@ Mukesh = [
         ),
     ],
 ]
+
+# Function to calculate uptime
+def get_readable_time():
+    now = datetime.now()
+    uptime_duration = now - START_TIME
+    hours, remainder = divmod(uptime_duration.seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    return f"{uptime_duration.days}d {hours}h {minutes}m {seconds}s"
 
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
@@ -44,13 +55,13 @@ async def restart(client, m: Message):
     await umm.delete()
     await asyncio.sleep(0.2)
 
-    # Add a value for 'Uptime', replace with actual uptime or calculation.
-    Uptime = "2 hours"
+    # Get the formatted uptime string
+    uptime = get_readable_time()
 
-    # Replace the empty placeholder {} with the message sender's first name or any other value.
+    # Replace the empty placeholder {} with the message sender's first name
     await m.reply_photo(
         MISHI,  # Use a single image URL from MISHI
-        caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {Uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
+        caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
         reply_markup=InlineKeyboardMarkup(Mukesh)
     )
 
