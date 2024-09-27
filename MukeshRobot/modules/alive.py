@@ -5,25 +5,27 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from MukeshRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT, pbot
-from MukeshRobot.modules.helper_funcs.misc import paginate_modules
 
 # Store the bot start time
 START_TIME = datetime.now()
 
 MISHI = "https://envs.sh/STz.jpg"  # Use a single image URL
 
-Mukesh = [
+# Create the inline keyboard for the reply message
+Mukesh = InlineKeyboardMarkup(
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/kittyxupdates"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="˹🕸️ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ 🕸️˼",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        ),
-    ],
-]
+        [
+            InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/kittyxupdates"),
+            InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="˹🕸️ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ 🕸️˼",
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+            ),
+        ],
+    ]
+)
 
 # Function to calculate uptime
 def get_readable_time():
@@ -63,7 +65,7 @@ async def alive_command(client, m: Message):
         await m.reply_photo(
             MISHI,
             caption=f"""**Hey {m.from_user.first_name}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
-            reply_markup=InlineKeyboardMarkup(Mukesh)
+            reply_markup=Mukesh  # Use the InlineKeyboardMarkup object here
         )
     except Exception as e:
         print(f"Error in /alive command: {e}")
