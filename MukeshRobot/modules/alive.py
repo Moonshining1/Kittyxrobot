@@ -53,7 +53,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.2)
     await m.reply_photo(
         START_IMG,
-        caption=f"""**Hey {0}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {2} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
+        caption=f"""**Hey {}\n\n I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {Uptime} ✨🥀 \n\n**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)""",
         reply_markup=InlineKeyboardMarkup(Mukesh)
     )
 
