@@ -63,17 +63,17 @@ async def alive_command(client, m: Message):
 
         # Reply with the alive status message
         await m.reply_photo(
-            photo=MISHI,  # Correctly specify 'photo'
+            photo=MISHI,
             caption=(
                 f"**Hey {m.from_user.first_name},\n\n"
                 f"I am [{BOT_NAME}](t.me/{BOT_USERNAME}) alive and working since {uptime} ✨🥀 \n\n"
                 "**Made by ➛** [🇲σ᭡፝֟ɳ🌙](https://t.me/about_ur_moonshining/5)"
             ),
-            reply_markup=Mukesh  # Use the InlineKeyboardMarkup object here
+            reply_markup=Mukesh
         )
     except Exception as e:
         print(f"Error in /alive command: {e}")
-        await m.reply("Something went wrong while checking bot status. Please try again later.")
+        await m.reply(f"Something went wrong while checking bot status. Error: {str(e)}")
 
 __mod_name__ = "Alive"
 __help__ = """
