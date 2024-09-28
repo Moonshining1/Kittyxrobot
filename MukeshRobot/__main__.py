@@ -78,7 +78,7 @@ PM_START_TEXT = """
 *Hi* {} 
 Nice to meet you !
 
-I am  ˹𝐊íԵԵყ ✘ 𝙼ᴜsɪᴄ˼
+I am Meowzard bot 😺 
 A powerful stable and cute telegram music and management bot.
 """
 
@@ -365,7 +365,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• Kitty v2.0 •", callback_data="expert_help"),
+                        InlineKeyboardButton(text="• Meowzard v2.0 •", callback_data="expert_help"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -1073,7 +1073,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="+ Add me to your clan darlo +",
-                            url="https://t.me/kittyxmusic_bot?startgroup=true"
+                            url="https://t.me/Meowzardxbot?startgroup=true"
                             )
                        ]
                 ]
