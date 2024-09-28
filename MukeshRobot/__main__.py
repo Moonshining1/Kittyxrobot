@@ -78,7 +78,7 @@ PM_START_TEXT = """
 *Hi* {} 
 Nice to meet you !
 
-I am {BOT_NAME} 
+I am Meowzard bot 😺 
 A powerful stable and cute telegram music and management bot.
 """
 
@@ -1087,7 +1087,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 photo=f"{START_IMG}",
                 caption=f"""
-✨ㅤ˹𝐊íԵԵყ ✘ 𝙼ᴜsɪᴄ˼ I am alive 🖤!
+✨ [Meowzard bot 😺](https://t.me/meowzardxbot) I am alive 🖤!
 
 {BOT_NAME} system stats :
 
@@ -1096,7 +1096,7 @@ def main():
 **❄️  Cpu:** `{tlhver}`
 **🔮  Disk:** `{pyrover}`
 
-Made ˹𝐊íԵԵყ ✘ 𝙼ᴜsɪᴄ˼ with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
+Made [Meowzard bot 😺](https://t.me/meowzardxbot) with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
             )
