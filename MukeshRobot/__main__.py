@@ -78,7 +78,7 @@ PM_START_TEXT = """
 *Hi* {} 
 Nice to meet you !
 
-I am Meowzard bot 😺 
+I am {BOT_NAME} 
 A powerful stable and cute telegram music and management bot.
 """
 
@@ -101,12 +101,15 @@ buttons = [
 ]
 
 HELP_STRINGS = f"""
-» *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*"""
+» *{BOT_NAME}  present it's feature choose a module to get help about it ✨*"""
 
-DONATE_STRING = f"""ʜᴇʏ ʙᴀʙʏ,
-  ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
+DONATE_STRING = f"""Hey, i am glad to know you are interested in donating us that mean a lot :)
 
-ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @Kittyxgang ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @kittyxupdates ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
+We provide 24×7 managment and music service so we also need some help for it, donate now via:-
+• Upi id » Kittyxupdates 
+• You can also donate by contacting [developer](https://t.me/about_ur_moonshining/5) ✅
+
+Your small amount can help us and meowzard to grow more ✨"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -429,7 +432,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Main_help":
         query.message.edit_caption(f"""
- ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ {BOT_NAME}
+ {BOT_NAME} help menu ✨
 """,
             parse_mode=ParseMode.MARKDOWN,
             
@@ -451,7 +454,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data=="basic_help":
-        query.message.edit_caption("""Hey This is a small and quick guide to kitty bot 🎉
+        query.message.edit_caption("""Hey This is a small and quick guide to meowzard bot 🎉
 
 1. Click on the "Add me to your clan" button
 2. Select your group name.
@@ -502,7 +505,7 @@ Pɪɴɴᴇᴅ Mᴇssᴀɢᴇs
     elif query.data=="advance_help":
         query.message.edit_caption("""Hey,
 
-I am Kitty bot ✨
+I am Meowzard bot ✨
 I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonshining/5) ❤.""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
@@ -534,7 +537,7 @@ I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonsh
 • Added Ph logo as img and sticker.
 • Added inbuilt music system.
 
-For more info about kitty updates check website 🎄👀""",parse_mode=ParseMode.MARKDOWN,
+For more info about Meowzard updates check website 🎄👀""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                [
@@ -557,7 +560,7 @@ We provide 24×7 managment and music service so we also need some help for it, d
 • Upi id » @kittyxupdates
 • You can also donate by contacting [developer](https://t.me/about_ur_moonshining/5) ✅
 
-Your small amount can help us and kitty to grow more ✨""",parse_mode=ParseMode.MARKDOWN,
+Your small amount can help us and meowzard to grow more ✨""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [ 
@@ -574,7 +577,7 @@ def Moon_about_callback(update: Update, context: CallbackContext):
             f"""
 Join our groups....🧊
 
-For more info about kitty updates check support 🎄👀
+For more info about meowzard updates check support 🎄👀
 """,
             parse_mode=ParseMode.MARKDOWN,
             
@@ -585,12 +588,12 @@ For more info about kitty updates check support 🎄👀
                             text="🍻 24/7 𝐂ɦเℓℓ 🥂", url=f"https://t.me/+vhymK8YMHA5iNTU9"
                         ),
                         InlineKeyboardButton(
-                            text="ᴋɪᴛᴛʏ ᴜᴘᴅᴀᴛᴇs🥀", url=f"t.me/kittyxupdates"
+                            text="Meowzard update 🥀", url=f"t.me/kittyxupdates"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="👨‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ 👨‍💻", callback_data="advance_help"
+                            text="👨‍💻 Developer 👨‍💻", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
                             text="Share your query💡", url="https://t.me/kittyxgang"
@@ -653,9 +656,9 @@ def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Music_":
         query.message.edit_caption(f"""
- Hi, i am a Kitty X player ...
+ Hi, i am a Meowzard X player ...
 
-Here is the help menu for Kitty music player ✨👀
+Here is the help menu for Meowzard music player ✨👀
 """,
             parse_mode=ParseMode.MARKDOWN,
             
@@ -1021,9 +1024,9 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 7006715434:
+        if OWNER_ID != 7297381612:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://t.me/kittybothub)"
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://t.me/kittyxgang)"
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATE_STRING})",
                 parse_mode=ParseMode.MARKDOWN,
                 
