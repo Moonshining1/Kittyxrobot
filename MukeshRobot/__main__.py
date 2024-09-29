@@ -585,15 +585,15 @@ For more info about meowzard updates check support 🎄👀
                 [
                     [
                         InlineKeyboardButton(
-                            text="🍻 24/7 𝐂ɦเℓℓ 🥂", url=f"https://t.me/+vhymK8YMHA5iNTU9"
+                            text="24/7 𝐂ɦเℓℓ 🥂", url=f"https://t.me/+vhymK8YMHA5iNTU9"
                         ),
                         InlineKeyboardButton(
-                            text="Meowzard update 🥀", url=f"t.me/kittyxupdates"
+                            text="Meowzard updates🥀", url=f"t.me/kittyxupdates"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="👨‍💻 Developer 👨‍💻", callback_data="advance_help"
+                            text="Developer 👨‍💻", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
                             text="Share your query💡", url="https://t.me/kittyxgang"
@@ -1076,7 +1076,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="+ Add me to your clan darlo +",
-                            url="https://t.me/Meowzardxbot?startgroup=true"
+                            url="https://t.me/Meowzardixbot?startgroup=true"
                             )
                        ]
                 ]
@@ -1087,7 +1087,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 photo=f"{START_IMG}",
                 caption=f"""
-✨ [Meowzard bot 😺](https://t.me/meowzardxbot) I am alive 🖤!
+✨ [Meowzard bot 😺](https://t.me/meowzardixbot) I am alive 🖤!
 
 {BOT_NAME} system stats :
 
@@ -1096,7 +1096,7 @@ def main():
 **❄️  Cpu:** `{tlhver}`
 **🔮  Disk:** `{pyrover}`
 
-Made [Meowzard bot 😺](https://t.me/meowzardxbot) with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
+Made [Meowzard bot 😺](https://t.me/meowzardixbot) with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
             )
