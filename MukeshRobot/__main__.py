@@ -78,7 +78,7 @@ PM_START_TEXT = """
 *Hi* {} 
 Nice to meet you !
 
-I am Meowzard bot 😺 
+I am Meowster bot 😺 
 A powerful stable and cute telegram music and management bot.
 """
 
@@ -109,7 +109,7 @@ We provide 24×7 managment and music service so we also need some help for it, d
 • Upi id » Kittyxupdates 
 • You can also donate by contacting [developer](https://t.me/about_ur_moonshining/5) ✅
 
-Your small amount can help us and meowzard to grow more ✨"""
+Your small amount can help us and Meowster to grow more ✨"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -368,7 +368,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• Meowzard v2.0 •", callback_data="expert_help"),
+                        InlineKeyboardButton(text="• Meowster v2.0 •", callback_data="expert_help"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -412,7 +412,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="👩‍💻 Developer 👩‍💻", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
-                            text="💡 Github 💡", url="https://t.me/Kittyxgang"
+                            text="💡 Study 💡", url="https://t.me/PWM_discussion"
                         ),
                     ],
                     [
@@ -454,7 +454,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data=="basic_help":
-        query.message.edit_caption("""Hey This is a small and quick guide to meowzard bot 🎉
+        query.message.edit_caption("""Hey This is a small and quick guide to meowster bot 🎉
 
 1. Click on the "Add me to your clan" button
 2. Select your group name.
@@ -505,7 +505,7 @@ Pɪɴɴᴇᴅ Mᴇssᴀɢᴇs
     elif query.data=="advance_help":
         query.message.edit_caption("""Hey,
 
-I am Meowzard bot ✨
+I am Meowster bot ✨
 I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonshining/5) ❤.""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
@@ -537,7 +537,7 @@ I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonsh
 • Added Ph logo as img and sticker.
 • Added inbuilt music system.
 
-For more info about Meowzard updates check website 🎄👀""",parse_mode=ParseMode.MARKDOWN,
+For more info about Meowster updates check website 🎄👀""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                [
@@ -547,7 +547,7 @@ For more info about Meowzard updates check website 🎄👀""",parse_mode=ParseM
                     ],                    
                     [
                         InlineKeyboardButton(text="👩‍💻 Developer 👩‍💻", callback_data="advance_help"),
-                        InlineKeyboardButton(text="💡 Github 💡", url="https://t.me/kittyxgang") 
+                        InlineKeyboardButton(text="💡 Github 💡", url="https://t.me/pwmbothub") 
                     ],
                     [InlineKeyboardButton(text="◁", callback_data="mukesh_"),]
                ]
@@ -560,7 +560,7 @@ We provide 24×7 managment and music service so we also need some help for it, d
 • Upi id » @kittyxupdates
 • You can also donate by contacting [developer](https://t.me/about_ur_moonshining/5) ✅
 
-Your small amount can help us and meowzard to grow more ✨""",parse_mode=ParseMode.MARKDOWN,
+Your small amount can help us and meowster to grow more ✨""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [ 
@@ -577,7 +577,7 @@ def Moon_about_callback(update: Update, context: CallbackContext):
             f"""
 Join our groups....🧊
 
-For more info about meowzard updates check support 🎄👀
+For more info about meowster updates check support 🎄👀
 """,
             parse_mode=ParseMode.MARKDOWN,
             
@@ -585,10 +585,10 @@ For more info about meowzard updates check support 🎄👀
                 [
                     [
                         InlineKeyboardButton(
-                            text="24/7 𝐂ɦเℓℓ 🥂", url=f"https://t.me/+vhymK8YMHA5iNTU9"
+                            text="Study 🥂", url=f"https://t.me/PWM_discussion"
                         ),
                         InlineKeyboardButton(
-                            text="Meowzard updates🥀", url=f"t.me/kittyxupdates"
+                            text="Meowster updates🥀", url=f"t.me/kittyxupdates"
                         ),
                     ],
                     [
@@ -596,7 +596,7 @@ For more info about meowzard updates check support 🎄👀
                             text="Developer 👨‍💻", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
-                            text="Share your query💡", url="https://t.me/kittyxgang"
+                            text="Share your query💡", url="https://t.me/pwmbothub"
                         ),
                     ],
                     [
@@ -625,7 +625,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
  ᴛʜɪs ɪs {BOT_NAME},
 ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://t.me/kittyxgang)
+*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://t.me/pwmbothub)
 
 Gaya tha kya yaha chhod ke 😂😂?
 """,
@@ -656,9 +656,9 @@ def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Music_":
         query.message.edit_caption(f"""
- Hi, i am a Meowzard X player ...
+ Hi, i am a Meowster X player ...
 
-Here is the help menu for Meowzard music player ✨👀
+Here is the help menu for Meowster music player ✨👀
 """,
             parse_mode=ParseMode.MARKDOWN,
             
@@ -1026,7 +1026,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 7297381612:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://t.me/kittyxgang)"
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](https://t.me/pwmbothub)"
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATE_STRING})",
                 parse_mode=ParseMode.MARKDOWN,
                 
@@ -1076,7 +1076,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="+ Add me to your clan darlo +",
-                            url="https://t.me/Meowzardixbot?startgroup=true"
+                            url="https://t.me/Meowsterxbot?startgroup=true"
                             )
                        ]
                 ]
@@ -1087,7 +1087,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 photo=f"{START_IMG}",
                 caption=f"""
-✨ [Meowzard bot 😺](https://t.me/meowzardixbot) I am alive 🖤!
+✨ [Meowster bot 😺](https://t.me/Meowsterxbot) I am alive 🖤!
 
 {BOT_NAME} system stats :
 
@@ -1096,7 +1096,7 @@ def main():
 **❄️  Cpu:** `{tlhver}`
 **🔮  Disk:** `{pyrover}`
 
-Made [Meowzard bot 😺](https://t.me/meowzardixbot) with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
+Made [Meowster bot 😺](https://t.me/Meowsterxbot) with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
             )
