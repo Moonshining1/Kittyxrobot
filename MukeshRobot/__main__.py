@@ -69,14 +69,16 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-PM_START_TEX = """
-ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
-"""
 
+
+PM_START_TEX = """
+Hello `{}`, how are you? 
+Wait a moment, bro . . .
+"""
 
 PM_START_TEXT = """ 
 *Hi* {} 
-Nice to meet you !
+Nice to meet you!
 
 I am Meowster bot 😺 
 A powerful stable and cute telegram music and management bot.
@@ -90,26 +92,25 @@ buttons = [
         ),
     ],
    [
-        InlineKeyboardButton(text="⭐ About me⭐", callback_data="mukesh_"),
+        InlineKeyboardButton(text="⭐ About me ⭐", callback_data="mukesh_"),
         InlineKeyboardButton(text="✨ Help ✨", callback_data="Main_help"),
-      ],    
+    ],
    [
         InlineKeyboardButton(text="❄ Owner ❄", callback_data="advance_help"),
         InlineKeyboardButton(text="🎄 Update 🎄", url=f"t.me/kittyxupdates"),
-      ],    
-
+    ],    
 ]
 
 HELP_STRINGS = f"""
-» *{BOT_NAME}  present it's feature choose a module to get help about it ✨*"""
+» *{BOT_NAME} presents its features! Choose a module to get help about it ✨*"""
 
-DONATE_STRING = f"""Hey, i am glad to know you are interested in donating us that mean a lot :)
+DONATE_STRING = f"""Hey, I am glad to know you're interested in donating! It means a lot :)
 
-We provide 24×7 managment and music service so we also need some help for it, donate now via:-
-• Upi id » Kittyxupdates 
+We provide 24×7 management and music services, so we also need some help for it. Donate now via:
+• UPI ID » Kittyxupdates 
 • You can also donate by contacting [developer](https://t.me/about_ur_moonshining/5) ✅
 
-Your small amount can help us and Meowster to grow more ✨"""
+Your small contribution can help us and Meowster grow more ✨"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -134,7 +135,6 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__mod_name__.lower()] = imported_module
 
-    # Chats to migrate on chat_migrated events
     if hasattr(imported_module, "__migrate__"):
         MIGRATEABLE.append(imported_module)
 
@@ -156,8 +156,6 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
-
-# do not async
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
@@ -169,9 +167,9 @@ def send_help(chat_id, text, keyboard=None):
         reply_markup=keyboard,
     )
 
+
 def start(update: Update, context: CallbackContext):
     args = context.args
-    global uptime
     uptime = get_readable_time((time.time() - StartTime))
     if update.effective_chat.type == "private":
         if len(args) >= 1:
@@ -188,36 +186,11 @@ def start(update: Update, context: CallbackContext):
                         [[InlineKeyboardButton(text="◁", callback_data="help_back")]]
                     ),
                 )
-            elif args[0].lower() == "markdownhelp":
-                IMPORTED["exᴛʀᴀs"].markdown_help_sender(update)
-            elif args[0].lower().startswith("stngs_"):
-                match = re.match("stngs_(.*)", args[0].lower())
-                chat = dispatcher.bot.getChat(match.group(1))
-
-                if is_user_admin(chat, update.effective_user.id):
-                    send_settings(match.group(1), update.effective_user.id, False)
-                else:
-                    send_settings(match.group(1), update.effective_user.id, True)
-
-            elif args[0][1:].isdigit() and "rᴜʟᴇs" in IMPORTED:
-                IMPORTED["rᴜʟᴇs"].send_rules(update, args[0], from_pm=True)
-
         else:
             first_name = update.effective_user.first_name
-            
-            x=update.effective_message.reply_sticker(
-                "CAACAgUAAx0Cfsvj5QABAWR9ZmFr8V3QGaYlgSf9TQdBqoKdNg0AAskKAAIaV_FW3DtablnaU9Q1BA")
-            x.delete()
-            usr = update.effective_user
-            lol = update.effective_message.reply_text(
-                PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
-            )
-            time.sleep(0.4)
-            lol.edit_text("🐳")
-            time.sleep(0.4)
-            lol.delete()
-            
-            update.effective_message.reply_photo(START_IMG,PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),
+            update.effective_message.reply_photo(
+                START_IMG,
+                caption=PM_START_TEXT.format(escape_markdown(first_name)),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -225,69 +198,9 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ  !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
-                uptime
-            ),
+            caption=f"I am alive, baby! Uptime: <b>{uptime}</b>",
             parse_mode=ParseMode.HTML,
         )
-
-
-def error_handler(update, context):
-    """Log the error and send a telegram message to notify the developer."""
-    # Log the error before we do anything else, so we can see it even if something breaks.
-    LOGGER.error(msg="Exception while handling an update:", exc_info=context.error)
-
-    # traceback.format_exception returns the usual python message about an exception, but as a
-    # list of strings rather than a single string, so we have to join them together.
-    tb_list = traceback.format_exception(
-        None, context.error, context.error.__traceback__
-    )
-    tb = "".join(tb_list)
-
-    # Build the message with some markup and additional information about what happened.
-    message = (
-        "An exception was raised while handling an update\n"
-        "<pre>update = {}</pre>\n\n"
-        "<pre>{}</pre>"
-    ).format(
-        html.escape(json.dumps(update.to_dict(), indent=2, ensure_ascii=False)),
-        html.escape(tb),
-    )
-
-    if len(message) >= 4096:
-        message = message[:4096]
-    # Finally, send the message
-    context.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
-
-
-# for test purposes
-def error_callback(update: Update, context: CallbackContext):
-    error = context.error
-    try:
-        raise error
-    except Unauthorized:
-        print("no nono1")
-        print(error)
-        # remove update.message.chat_id from conversation list
-    except BadRequest:
-        print("no nono2")
-        print("BadRequest caught")
-        print(error)
-
-        # handle malformed requests - read more below!
-    except TimedOut:
-        print("no nono3")
-        # handle slow connection problems
-    except NetworkError:
-        print("no nono4")
-        # handle other connection problems
-    except ChatMigrated as err:
-        print("no nono5")
-        print(err)
-        # the chat_id of a group has changed, use e.new_chat_id instead
-    except TelegramError:
-        print(error)
-        # handle all other telegram related errors
 
 
 def help_button(update: Update, context: CallbackContext):
@@ -300,24 +213,18 @@ def help_button(update: Update, context: CallbackContext):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = (
-                f"» *Available commands for* *{HELPABLE[module].__mod_name__}*:\n"
-                + HELPABLE[module].__help__
-            )
-            query.message.edit_text(
+            text = f"» *Available commands for {HELPABLE[module].__mod_name__}* :\n{HELPABLE[module].__help__}"
+            query.message.edit_caption(
                 text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(text="Back", callback_data="help_back"),
-                        InlineKeyboardButton(text="Support", callback_data="mukesh_support")
-                    ]]
+                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
                 ),
             )
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
-            query.message.edit_text(
+            query.message.edit_caption(
                 HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -327,7 +234,7 @@ def help_button(update: Update, context: CallbackContext):
 
         elif next_match:
             next_page = int(next_match.group(1))
-            query.message.edit_text(
+            query.message.edit_caption(
                 HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -336,7 +243,7 @@ def help_button(update: Update, context: CallbackContext):
             )
 
         elif back_match:
-            query.message.edit_text(
+            query.message.edit_caption(
                 HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -344,7 +251,6 @@ def help_button(update: Update, context: CallbackContext):
                 ),
             )
 
-        # Ensure no spinning white circle remains
         context.bot.answer_callback_query(query.id)
 
     except BadRequest:
