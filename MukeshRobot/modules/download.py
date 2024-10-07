@@ -93,7 +93,7 @@ Example - https://in.pinterest.com/pin/1117455726273676254/
 For downloading from any supported site like Twitter or Facebook, use /sdl <link>
 Example - /sdl https://twitter.com/i/status/1713856915883937995
 
-(✿◠‿◠)
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 __mod_name__ = "Downloader"
