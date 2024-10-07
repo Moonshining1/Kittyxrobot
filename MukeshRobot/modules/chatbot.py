@@ -46,7 +46,7 @@ def mukeshrm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "{} ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ {}.".format(
+                "{} Chatbot disable by{}.".format(
                     dispatcher.bot.first_name, mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -74,7 +74,7 @@ def mukeshadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "{} ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ {}.".format(
+                "{} Chatbot enable by{}.".format(
                     dispatcher.bot.first_name, mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -87,12 +87,12 @@ def mukeshadd(update: Update, context: CallbackContext) -> str:
 @gloggable
 def mukesh(update: Update, context: CallbackContext):
     message = update.effective_message
-    msg = "• ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ"
+    msg = "● Choose an option to enable/disable chatbot"
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data="add_chat({})"),
-                InlineKeyboardButton(text="ᴅɪsᴀʙʟᴇ", callback_data="rm_chat({})"),
+                InlineKeyboardButton(text="Enable", callback_data="add_chat({})"),
+                InlineKeyboardButton(text="Disable", callback_data="rm_chat({})"),
             ],
         ]
     )
@@ -158,3 +158,14 @@ __handlers__ = [
     RM_CHAT_HANDLER,
     CHATBOT_HANDLER,
 ]
+
+__mod_name__ = "Chatbot"
+__help__ = """
+ » Available commands for Chatbot 
+
+Meowster bot 😺 has an chatbot which provides you a seemingless chatting experience ✨
+
+●  /chatbot : Shows chatbot control panel.
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+ """
