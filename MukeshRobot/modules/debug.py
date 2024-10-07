@@ -64,12 +64,14 @@ dispatcher.add_handler(LOG_HANDLER)
 DEBUG_HANDLER = CommandHandler("debug", debug, run_async=True)
 dispatcher.add_handler(DEBUG_HANDLER)
 
-__mod_name__ = "Dᴇʙᴜɢ"
+__mod_name__ = "Debug"
 __help__ = """
-/logs    ᴛᴏ ɢᴇᴛ ʜᴇʀᴜᴋᴏ ʟᴏɢs
-/debug ᴛᴏ ᴏɴ / ᴏғғ ᴅᴇʙᴜɢ 
+» Available commands for Debug
 
-☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+● /logs    ᴛᴏ ɢᴇᴛ ʜᴇʀᴜᴋᴏ ʟᴏɢs
+● /debug ᴛᴏ ᴏɴ / ᴏғғ ᴅᴇʙᴜɢ 
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 __command_list__ = ["debug"]
 __handlers__ = [DEBUG_HANDLER]
