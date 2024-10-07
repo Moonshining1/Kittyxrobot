@@ -49,11 +49,14 @@ def sketch(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /sketch *➛*  ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ɪᴍᴀɢᴇ sᴋᴇᴛᴄʜ ʙʏ ʀᴇᴘʟʏɪɴɢ ᴘɪᴄᴛᴜʀᴇ.
+» Available commands for sketch 
 
+●  /sketch: create ur image sketch by replying pictures.
+
+ /⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
  """
 
-__mod_name__ = "sᴋᴇᴛᴄʜ"
+__mod_name__ = "Sketch"
 
 SKETCH_HANDLER = DisableAbleCommandHandler("sketch", sketch, run_async=True)
 dispatcher.add_handler(SKETCH_HANDLER)
