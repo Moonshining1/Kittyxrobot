@@ -139,14 +139,14 @@ dispatcher.add_handler(QUOTE_CHANGE)
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 dispatcher.add_handler(QUOTES_HANDLER)
 
-__mod_name__ = "Qᴜᴏᴛᴇs"
+__mod_name__ = "Quotes"
 __help__ = """
-/quote :- ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇs
-/animequotes :- ᴡʀɪᴛᴇ ᴀɴɪᴍᴇǫᴜᴏᴛᴇs
- /animelogo - ᴇɴᴛᴇʀ ᴛᴇxᴛ ᴀғᴛᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ɢᴇɴʀᴀᴛᴇ ᴀɴɪᴍᴇ ʟᴏɢᴏ.
+● /quote :- write quotes.
+● /animequotes :- write anime quotes
+● /animelogo - enter text command to generate anime logo.
  
-☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
- """
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 
 __command_list__ = [
     "animequotes",
