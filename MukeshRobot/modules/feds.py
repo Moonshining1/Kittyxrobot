@@ -2353,7 +2353,7 @@ def fed_owner_help(update: Update, context: CallbackContext):
 
 def fed_admin_help(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
-        """*🔱 Fed Admins:*
+        """*💰 Fed Admins:*
  • `/fban <user> <reason>`*:* Fed bans a user
  • `/unfban <user> <reason>`*:* Removes a user from a fed ban
  • `/fedinfo <fed_id>`*:* Information about the specified Federation
@@ -2379,26 +2379,24 @@ def fed_user_help(update: Update, context: CallbackContext):
     )
 
 
-__mod_name__ = "Fᴇᴅ"
-__help__ = """ ғᴇᴅᴇʀᴀᴛɪᴏɴ
-ᴇᴠᴇʀʏᴛʜɪɴɢ ɪs ғᴜɴ, ᴜɴᴛɪʟ ᴀ sᴘᴀᴍᴍᴇʀ sᴛᴀʀᴛs ᴇɴᴛᴇʀɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ, ᴀɴᴅ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ʙʟᴏᴄᴋ ɪᴛ. ᴛʜᴇɴ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ sᴛᴀʀᴛ ʙᴀɴɴɪɴɢ ᴍᴏʀᴇ, ᴀɴᴅ ᴍᴏʀᴇ, ᴀɴᴅ ɪᴛ ʜᴜʀᴛs.
-ʙᴜᴛ ᴛʜᴇɴ ʏᴏᴜ ʜᴀᴠᴇ ᴍᴀɴʏ ɢʀᴏᴜᴘs, ᴀɴᴅ ʏᴏᴜ ᴅᴏɴ'ᴛ  ᴡᴀɴᴛ ᴛʜɪs sᴘᴀᴍᴍᴇʀ ᴛᴏ ʙᴇ ɪɴ ᴏɴᴇ ᴏғ ʏᴏᴜʀ ɢʀᴏᴜᴘs - ʜᴏᴡ ᴄᴀɴ ʏᴏᴜ ᴅᴇᴀʟ? ᴅᴏ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴍᴀɴᴜᴀʟʟʏ ʙʟᴏᴄᴋ ɪᴛ, in ᴀʟʟ ʏᴏᴜʀ groups?
+__mod_name__ = "Federation"
+__help__ = """ » Available commands for Fedration 
+ 
+Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
+But then you have many groups, and you don't want this spammer to be in one of your group - HOw can you deal? Do you have to manually block it, in all group..!?
+No longer..! with fedration, you can make a ban in one chat overlap with all other chats :)
+You can even sign fedration admin, so your trusted admin can ban all spammers from chat you want to protect.
 
+/fedhelp: to get all help regard fedration.
 
-ɴᴏ ʟᴏɴɢᴇʀ! ᴡɪᴛʜ ғᴇᴅᴇʀᴀᴛɪᴏɴ, ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ᴀ ʙᴀɴ ɪɴ ᴏɴᴇ ᴄʜᴀᴛ ᴏᴠᴇʀʟᴀᴘ ᴡɪᴛʜ ᴀʟʟ ᴏᴛʜᴇʀ ᴄʜᴀᴛs.
+/fedownerhelp : ᴘʀᴏᴠɪᴅᴇs ʜᴇʟᴘ for fed ᴄʀᴇᴀᴛɪᴏɴ ᴀɴᴅ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅs
 
-ʏᴏᴜ ᴄᴀɴ ᴇᴠᴇɴ ᴅᴇsɪɢɴᴀᴛᴇ ғᴇᴅᴇʀᴀᴛɪᴏɴ ᴀᴅᴍɪɴs, sᴏ ʏᴏᴜʀ ᴛʀᴜsᴛᴇᴅ ᴀᴅᴍɪɴ ᴄᴀɴ ʙᴀɴ ᴀʟʟ ᴛʜᴇ sᴘᴀᴍᴍᴇʀs ғʀᴏᴍ ᴄʜᴀᴛs ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ.
+/fedadminhelp : ᴘʀᴏᴠɪᴅᴇs ʜᴇʟᴘ for fed ᴀᴅᴍɪɴɪsᴛʀᴀᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅs
 
+/feduserhelp : ᴘʀᴏᴠɪᴅᴇs ʜᴇʟᴘ ғᴏʀ ᴄᴏᴍᴍᴀɴᴅs ᴀɴʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ 
 
-ᴄᴏᴍᴍᴀɴᴅs:
-
-ғᴇᴅs ᴀʀᴇ ɴᴏᴡ ᴅɪᴠɪᴅᴇᴅ ɪɴᴛᴏ 3 sᴇᴄᴛɪᴏɴs ғᴏʀ ʏᴏᴜʀ ᴇᴀsᴇ.
-
-•➥ /fedownerhelp : ᴘʀᴏᴠɪᴅᴇs ʜᴇʟᴘ for fed ᴄʀᴇᴀᴛɪᴏɴ ᴀɴᴅ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅs
-
-•➥ /fedadminhelp : ᴘʀᴏᴠɪᴅᴇs ʜᴇʟᴘ for fed ᴀᴅᴍɪɴɪsᴛʀᴀᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅs
-
-•➥ /feduserhelp : ᴘʀᴏᴠɪᴅᴇs ʜᴇʟᴘ ғᴏʀ ᴄᴏᴍᴍᴀɴᴅs ᴀɴʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ """
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 
 
 NEW_FED_HANDLER = CommandHandler("newfed", new_fed)
