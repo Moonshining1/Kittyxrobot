@@ -76,12 +76,13 @@ async def couple(_, message):
 
 
 __help__ = """
-ᴄʜᴏᴏsᴇ ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ
+» Available commands for Couple 
 
- ❍ /couples *:* ᴄʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
- ❍ /love ➠ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴀᴍᴇs ᴏғ ᴛᴡᴏ ᴘᴇʀsᴏɴ {ғɪʀsᴛ} {sᴇᴄᴏɴᴅ} ᴀғᴛᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴄʜᴇᴄᴋ ʟᴏᴠᴇ sᴛᴀᴛs ʙᴇᴛᴡᴇᴇɴ ᴛʜᴇᴍ 🥰 [ᴛᴀᴋᴇ ɪᴛ ᴀs ғᴜɴ 😁].
+Choose couples in your chat
 
- ☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+● /couple : Choose 2 users and send their name as couples in your chat.
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
-__mod_name__ = "Cᴏᴜᴘʟᴇ"
+__mod_name__ = "Couples"
