@@ -51,12 +51,14 @@ def convert(update: Update, context: CallbackContext):
 
 
 __help__ = """
+» Available commands for Cash
+
 Converts money from one exchange to another
 
 Usage: /cash amount from to
 Example: /cash 20 USD INR
 
-☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 CONVERTER_HANDLER = CommandHandler("cash", convert, run_async=True)
@@ -65,4 +67,4 @@ __command_list__ = ["cash"]
 
 __handlers__ = [CONVERTER_HANDLER]
 
-__mod_name__ = "Cᴀsʜ"
+__mod_name__ = "Cash"
