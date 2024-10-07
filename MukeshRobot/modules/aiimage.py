@@ -55,8 +55,10 @@ async def imagine_(b, message: Message):
 # -----------CREDITS -----------
 # telegram : @legend_coder
 # github : noob-mukesh
-__mod_name__ = "Aɪ ɪᴍᴀɢᴇ"
+__mod_name__ = "Ai-image"
 __help__ = """
+» Available commands for Ai image 
+
 /imagine : ɢᴇɴᴇʀᴀᴛᴇ Aɪ ɪᴍᴀɢᴇ ғʀᴏᴍ ᴛᴇxᴛ
 /day ➠ ᴇɴᴛᴇʀ ᴛʜᴇ ᴅᴀᴛᴇ {ʏᴇᴀʀ/ᴍᴏɴᴛʜ/ᴅᴀᴛᴇ} ᴀғᴛᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴛʜᴇ ᴅᴀʏ ᴏɴ ᴛʜᴀᴛ ᴅᴀᴛᴇ.
 /cute ➠ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜᴛᴇɴᴇss🥰.
@@ -69,5 +71,6 @@ __help__ = """
 /wish ➠ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴡɪsʜ ᴀғᴛᴇʀ ᴄᴏᴍᴍᴀɴᴅ.
 /bored ➠ ᴊᴜsᴛ ғᴏʀ ғᴜɴ😁.
 /gay ➠ ɢᴇᴛ ʏᴏᴜʀ ɢᴀʏ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ  ˡᵒˡ 😅.
-☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
- """
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
