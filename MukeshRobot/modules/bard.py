@@ -1,71 +1,66 @@
 __help__ = """
- /bard [ǫᴜᴇʀʏ] -ᴀsᴋ ʏᴏᴜʀ ǫᴜᴇsᴛɪᴏɴ ᴡɪᴛʜ ɢᴏᴏɢʟᴇ's ʙᴀʀᴅ ᴀɪ"""
+» Available commands for bard
 
+● /bard (query): ask ur question with Google's bard ai
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 __mod_name__ = "Bard"
 
 
 __help__ = """
-**ʙᴏᴛs**
+» Available commands for bots
 
-• /bots - ɢᴇᴛ ᴀ ʟɪsᴛ ᴏғ ʙᴏᴛs ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ."""
+● /bots - get a list of bots in the group.
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 
 __mod_name__ = "Bots"
 
 
 __help__ = """
-## Cᴏᴍᴍᴀɴᴅs Hᴇᴘ
+» Available commands for repo
 
-### 1. /ᴅᴏᴡɴᴏᴀᴅʀᴇᴘᴏ
-**Dᴇsᴄʀɪᴘᴛɪᴏɴ:**
-Dᴏᴡɴᴏᴀᴅ ᴀɴᴅ ʀᴇᴛʀɪᴇᴠᴇ ғɪᴇs ғʀᴏᴍ ᴀ GɪᴛHᴜʙ ʀᴇᴘᴏsɪᴛᴏʀʏ.
+● /downloadrepo (repo url): download and retrieve file from a GitHub repository.
 
-**Usᴀɢᴇ:**
-/ᴅᴏᴡɴᴏᴀᴅʀᴇᴘᴏ [Rᴇᴘᴏ_URL]
-
-**Dᴇᴛᴀɪs:**
-- Cᴏɴᴇs ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ GɪᴛHᴜʙ ʀᴇᴘᴏsɪᴛᴏʀʏ.
-- Cʀᴇᴀᴛᴇs ᴀ ᴢɪᴘ ғɪᴇ ᴏғ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ.
-- Sᴇɴᴅs ᴛʜᴇ ᴢɪᴘ ғɪᴇ ʙᴀᴄᴋ ᴀs ᴀ ᴅᴏᴄᴜᴍᴇɴᴛ.
-- Iғ ᴛʜᴇ ᴅᴏᴡɴᴏᴀᴅ ғᴀɪs, ᴀɴ ᴇʀʀᴏʀ ᴍᴇssᴀɢᴇ ᴡɪ ʙᴇ ᴅɪsᴘᴀʏᴇᴅ.
-
-**Exᴀᴍᴘᴇs:**
-- `/ᴅᴏᴡɴᴏᴀᴅʀᴇᴘᴏ ʜᴛᴛᴘs://ɢɪᴛʜᴜʙ.ᴄᴏᴍ/ᴜsᴇʀɴᴀᴍᴇ/ʀᴇᴘᴏsɪᴛᴏʀʏ`"""
-
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 __mod_name__ = "Repo"
 
 
 __help__ = """
-/fake [ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ ] - ᴛᴏ ɢᴇᴛ ʀᴀɴᴅᴏᴍ ᴀᴅᴅʀᴇss"""
+» Available commands for fake
 
+● /fake (country name): to get random adress 
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 __mod_name__ = "Fake"
 
 __help__ = """
-**ʜᴀᴠɪɴɢ ꜰᴜɴ:**
+» Available commands for fun
 
-• `/dice`: Rᴏʟʟs ᴀ ᴅɪᴄᴇ.
-• `/ludo`: Pʟᴀʏ Lᴜᴅᴏ.
-• `/dart`: Tʜʀᴏᴡs ᴀ ᴅᴀʀᴛ.
-• `/basket` ᴏʀ `/basketball`: Pʟᴀʏs ʙᴀsᴋᴇᴛʙᴀʟʟ.
-• `/football`: Pʟᴀʏs ғᴏᴏᴛʙᴀʟʟ.
-• `/slot` ᴏʀ `/jackpot`: Pʟᴀʏs ᴊᴀᴄᴋᴘᴏᴛ.
-• `/bowling`: Pʟᴀʏs ʙᴏᴡʟɪɴɢ.
-• `/bored`: Gᴇᴛs ʀᴀɴᴅᴏᴍ ᴀᴄᴛɪᴠɪᴛʏ ɪғ ʏᴏᴜ'ʀᴇ ʙᴏʀᴇᴅ."""
+● `/dice`: rolls a dice. 
+● `/ludo`: play ludo. 
+● `/dart`: throws a dart.
+● `/basket` ᴏr `/basketball`: plays basketball.
+● `/football`: play football.
+● `/slot` ᴏʀ `/jackpot`: play jackpot.
+● `/bowling`: play bowling.
+● `/bored`: gets random activity if you're bored. 
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 
 __mod_name__ = "Fun"
 
 __help__ = """
-**𝐆𝐚𝐥𝐢 𝐂𝐨𝐦𝐦𝐚𝐧𝐝**
+» Available commands for gali
 
-Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʏ ғᴏʀ Pʀɪᴠᴀᴛᴇ ᴍᴇssᴀɢᴇ, Gᴏ Tᴏ Bᴏᴛ Pʀɪᴠᴀᴛᴇ Mᴇssᴀɢᴇ Aɴᴅ Tʏᴘᴇ /ɢᴀɪ Cᴏᴍᴍᴀɴᴅ.
+● /gai or /gali: this command is for private message.
 
-Fᴇᴀᴛᴜʀᴇs:
-- Pʀᴏᴠɪᴅᴇs ʀᴀɴᴅᴏᴍ ᴀʙᴜsɪᴠᴇ ᴀɴɢᴜᴀɢᴇ (ɢᴀɪ) ᴡʜᴇɴ ᴜsᴇᴅ ɪɴ DMs.
-- Dɪsᴘᴀʏs ᴀ ᴍᴇssᴀɢᴇ ɪɴᴅɪᴄᴀᴛɪɴɢ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʏ ғᴏʀ ᴘʀɪᴠᴀᴛᴇ ᴍᴇssᴀɢᴇs ᴡʜᴇɴ ᴜsᴇᴅ ɪɴ ɢʀᴏᴜᴘs.
-
-Cᴏᴍᴍᴀɴᴅ:
-- /ɢᴀɪ: Sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴀʙᴜsɪᴠᴇ ᴀɴɢᴜᴀɢᴇ (ɢᴀɪ) ᴡʜᴇɴ ᴜsᴇᴅ ɪɴ DMs.
-
-Nᴏᴛᴇ: Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ʀᴇsᴛʀɪᴄᴛᴇᴅ ᴛᴏ ᴘʀɪᴠᴀᴛᴇ ᴍᴇssᴀɢᴇs ᴏɴʏ ᴛᴏ ᴍᴀɪɴᴛᴀɪɴ ᴅᴇᴄᴏʀᴜᴍ ɪɴ ɢʀᴏᴜᴘ ᴄʜᴀᴛs.
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 __mod_name__ = "Gali"
 
@@ -73,56 +68,55 @@ __mod_name__ = "Gali"
 __mod_name__ = "Gᴏᴏɢʟᴇ"
 
 __help__ = """
- ❍ /google <text>*:* Perform a google search
- ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
- ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
- ❍ /reverse |pp |grs: Does a reverse image search of the media which it was replied to.
+» Available commands for Google 
 
+● /google <text>*:* Perform a google search
+● /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+● /app <appname>*:* Searches for an app in Play Store and returns its details.
+● /reverse |pp |grs: Does a reverse image search of the media which it was replied to.
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 __help__ = """
-**ʜᴀsʜᴛᴀɢ ɢᴇɴᴇʀᴀᴛᴏʀ:**
+» Available commands for hashtag 
 
-• `/hashtag [text]`: Gᴇɴᴇʀᴀᴛᴇ ʜᴀsʜᴛᴀɢs ғᴏʀ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ."""
+● /hastag (text): generate hastag for the given text.
 
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 __mod_name__ = "Hastag"
 
 __help__ = """
-## Hɪsᴛᴏʀʏ Cᴏᴍᴍᴀɴᴅs Hᴇᴘ
+» Available commands for history 
 
-### 1. /sɢ ᴏʀ /Hɪsᴛᴏʀʏ
-**Dᴇsᴄʀɪᴘᴛɪᴏɴ:**
-Fᴇᴛᴄʜᴇs ᴀ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴀ ᴜsᴇʀ's ᴍᴇssᴀɢᴇ ʜɪsᴛᴏʀʏ.
+● /sg or /history: fetches a random message from a user's message history.
+● /sg (username/id/reply)
 
-**Usᴀɢᴇ:**
-/sɢ [ᴜsᴇʀɴᴀᴍᴇ/ɪᴅ/ʀᴇᴘʏ]
-
-**Dᴇᴛᴀɪs:**
-- Fᴇᴛᴄʜᴇs ᴀ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ ʜɪsᴛᴏʀʏ ᴏғ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ᴜsᴇʀ.
-- Cᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴘʀᴏᴠɪᴅɪɴɢ ᴀ ᴜsᴇʀɴᴀᴍᴇ, ᴜsᴇʀ ID, ᴏʀ ʀᴇᴘʏɪɴɢ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴜsᴇʀ.
-- Aᴄᴄᴇssɪʙᴇ ᴏɴʏ ʙʏ ᴛʜᴇ ʙᴏᴛ's ᴀssɪsᴛᴀɴᴛs.
-
-**Exᴀᴍᴘᴇs:**
-- `/sɢ ᴜsᴇʀɴᴀᴍᴇ`
-- `/sɢ ᴜsᴇʀ_ɪᴅ`
-- `/sɢ [ʀᴇᴘʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ]`"""
-
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 __mod_name__ = "History"
 
 
 __help__ = """
-**ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ:**
+» Available commands for reel
 
-• `/ig [URL]`: ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟs. Pʀᴏᴠɪᴅᴇ ᴛʜᴇ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ.
-• `/instagram [URL]`: ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟs. Pʀᴏᴠɪᴅᴇ ᴛʜᴇ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ.
-• `/reel [URL]`: ᴅᴏᴡɴʟᴏᴀᴅ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟs. Pʀᴏᴠɪᴅᴇ ᴛʜᴇ ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ."""
+● /ig (url): download Instagram reels.
+● /instagram (url): download Instagram reels.
+● /reels (url): download Instagram reels.
 
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 __mod_name__ = "Reel"
 
 
 __help__ = """
-- `/ɢɪᴠᴇɪɴᴋ`: Gᴇᴛ ᴛʜᴇ ɪɴᴠɪᴛᴇ ɪɴᴋ ғᴏʀ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴄʜᴀᴛ.
-- `/ɪɴᴋ ɢʀᴏᴜᴘ_ɪᴅ`: Gᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀɴᴅ ɢᴇɴᴇʀᴀᴛᴇ ᴀɴ ɪɴᴠɪᴛᴇ ɪɴᴋ ғᴏʀ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ɢʀᴏᴜᴘ ID.
+» Available commands for Give link
+
+● /givelink: get the invite link for the current chat.
+● /link group_id: get information and generate an invite link for the specified group id.
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 __mod_name__ = "Give link"
@@ -134,116 +128,99 @@ __help__ = """
 ● /wish <your wish> : let you know what is the chance of sucess of your sucess.
 ● /judge <reply to someone> : let you know user is telling lie or truth. 
 
-(✿◠‿◠)"""
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 
 __mod_name__ = "Judge"
 
 __help__ = """
-**ᴄᴏᴍᴍᴀɴᴅs:**
-• /pypi <package_name>`: Get details about a specified Python package from PyPI.
+» Available commands for pypi
 
-**ɪɴғᴏ:**
-ᴛʜɪs ᴍᴏᴅᴜʟᴇ ᴀʟʟᴏᴡs ᴜsᴇʀs ᴛᴏ ғᴇᴛᴄʜ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴘʏᴛʜᴏɴ ᴘᴀᴄᴋᴀɢᴇs ғʀᴏᴍ ᴘʏᴘɪ, ɪɴᴄʟᴜᴅɪɴɢ ᴛʜᴇ ᴘᴀᴄᴋᴀɢᴇ ɴᴀᴍᴇ, ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ, ᴅᴇsᴄʀɪᴘᴛɪᴏɴ, ᴀɴᴅ ᴘʀᴏᴊᴇᴄᴛ ᴜʀʟ.
+● /pypi <package_name>`: Get details about a specified Python package from PyPI.
 
-**ɴᴏᴛᴇ:**
-ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴠᴀʟɪᴅ ᴘᴀᴄᴋᴀɢᴇ ɴᴀᴍᴇ ᴀғᴛᴇʀ ᴛʜᴇ `/pypi` ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴘᴀᴄᴋᴀɢᴇ ᴅᴇᴛᴀɪʟs.
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 __mod_name__ = "Pypi"
 
 
 __help__ = """
-Ƭʜɪs ᴍᴏᴅᴜʟᴇ ɢᴇɴᴇʀᴀᴛᴇs Qʀ ᴄᴏᴅᴇs. Usᴇ ᴛʜᴇ /qr ᴄᴏᴍᴍᴀɴᴅ ғᴏʟʟᴏᴡᴇᴅ ʙʏ ᴛʜᴇ ᴛᴇxᴛ ᴏʀ URL ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴇɴᴄᴏᴅᴇ ɪɴᴛᴏ ᴀ Qʀ ᴄᴏᴅᴇ. Fᴏʀ ᴇxᴀᴍᴘʟᴇ, `/qr https://t.me/vivekkumar07089`. Tʜᴇ ʙᴏᴛ ᴡɪʟʟ ᴛʜᴇɴ ɢᴇɴᴇʀᴀᴛᴇ ᴀ Qʀ ᴄᴏᴅᴇ ғᴏʀ ᴛʜᴇ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴᴘᴜᴛ. Mᴀᴋᴇ sᴜʀᴇ ᴛᴏ ɪɴᴄʟᴜᴅᴇ ᴛʜᴇ ᴘʀᴏᴛᴏᴄᴏʟ (http:// ᴏʀ https://) ғᴏʀ URLs. Eɴᴊᴏʏ ᴄʀᴇᴀᴛɪɴɢ Qʀ ᴄᴏᴅᴇs ᴡɪᴛʜ ᴇᴀsᴇ!
+» Available commands for qrgen
+
+● /qr: text or url convert into qr code
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 __mod_name__ = "Qrgen"
 
 
 __help__ = """
-/pretender - [Oɴ / ᴏғғ]  - ᴛᴏ ᴛᴜʀɴ ᴏɴ ᴏʀ ᴏғғ ᴘʀᴇᴛᴇɴᴅᴇʀ ғᴏʀ ʏᴏᴜ ᴄʜᴀᴛ ɪғ ᴀɴʏ ᴜsᴇʀ ᴄʜᴀɴɢᴇ ʜᴇʀ ᴜsᴇʀɴᴀᴍᴇ, ɴᴀᴍᴇ , ʙɪᴏ ʙᴏᴛ ᴡɪʟʟ sᴇɴᴅ ᴍᴇssᴀɢᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ"""
+» Available commands for Pretender 
 
+● /pretender - [on / offғ]  - to turn on or off pretender fir you chat ifany user change her username,name,bio bot will send msg in ur chat.
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
 __mod_name__ = "Pretender"
 
 
 __help__ = """
-/ɢғ, /ʙғ, /sʜᴀʏʀɪ, /sᴀʀɪ, /sʜᴀʀɪ, /ᴏᴠᴇ: Gᴇᴛ ᴀ ʀᴀɴᴅᴏᴍ Sʜᴀʏᴀʀɪ.
+» Available commands for Shayari 
 
-Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡᴏʀᴋs ɪɴ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ ᴄʜᴀᴛs. Iᴛ ᴘʀᴏᴠɪᴅᴇs ᴀ ʀᴀɴᴅᴏᴍ ᴘɪᴇᴄᴇ ᴏғ Sʜᴀʏᴀʀɪ ғʀᴏᴍ ᴀ ᴘʀᴇᴅᴇғɪɴᴇᴅ ɪsᴛ. Tʜᴇ ʀᴇᴘʏ ɪɴᴄᴜᴅᴇs ʙᴜᴛᴛᴏɴs ғᴏʀ sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴏғғɪᴄɪᴀ ᴄʜᴀɴɴᴇs.
+● /gf, /bf, /shayri, /sari, /ove: get a random shayari
 
-Fᴇᴀᴛᴜʀᴇs:
-- Pʀᴏᴠɪᴅᴇs ᴀ ʀᴀɴᴅᴏᴍ Sʜᴀʏᴀʀɪ ᴏɴ ᴄᴏᴍᴍᴀɴᴅ.
-- Aᴠᴀɪᴀʙᴇ ɪɴ ʙᴏᴛʜ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ɢʀᴏᴜᴘ ᴄʜᴀᴛs.
-- Iɴᴄᴜᴅᴇs ɪɴɪɴᴇ ᴋᴇʏʙᴏᴀʀᴅ ʙᴜᴛᴛᴏɴs ғᴏʀ ᴀᴅᴅɪᴛɪᴏɴᴀ sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴏғғɪᴄɪᴀ ɪɴᴋs.
-
-Cᴏᴍᴍᴀɴᴅs:
-- /ɢғ
-- /ʙғ
-- /sʜᴀʏʀɪ
-- /sᴀʀɪ
-- /sʜᴀʀɪ
-- /ᴏᴠᴇ
-
-Nᴏᴛᴇ: Tʜɪs ʙᴏᴛ ᴘʀᴏᴠɪᴅᴇs ɪɴᴋs ᴛᴏ sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴏғғɪᴄɪᴀ ᴄʜᴀɴɴᴇs ғᴏʀ ғᴜʀᴛʜᴇʀ ᴀssɪsᴛᴀɴᴄᴇ.
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 __mod_name__ = "Shayari"
 
 __help__ = """
-**ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ**
+» Available commands for tts
 
-ᴜsᴇ ᴛʜᴇ `/tts` ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ɪɴᴛᴏ sᴘᴇᴇᴄʜ.
+●  /tts: command to convert text into speech.
 
-- `/tts <ᴛᴇxᴛ>`: ᴄᴏɴᴠᴇʀᴛs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ ɪɴ ʜɪɴᴅɪ.
-
-**ᴇxᴀᴍᴘʟᴇ:**
-- `/tts Namaste Duniya`
-
-**ɴᴏᴛᴇ:**
-ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴀғᴛᴇʀ ᴛʜᴇ `/tts` ᴄᴏᴍᴍᴀɴᴅ.
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 __mod_name__ = "Tts"
 
 __help__ = """
-## Mᴀᴛʜ Cᴏᴍᴍᴀɴᴅ Hᴇᴘ
 
-### 1. /ᴍᴀᴛʜ [ᴇxᴘʀᴇssɪᴏɴ]
-**Dᴇsᴄʀɪᴘᴛɪᴏɴ:**
-Cᴀᴄᴜᴀᴛᴇs ᴛʜᴇ ʀᴇsᴜᴛ ᴏғ ᴀ ᴍᴀᴛʜᴇᴍᴀᴛɪᴄᴀ ᴇxᴘʀᴇssɪᴏɴ.
+» Available commands for Math
 
-**Usᴀɢᴇ:**
-/ᴍᴀᴛʜ [ᴇxᴘʀᴇssɪᴏɴ]
+● /math: (expression) calculate the result of a mathematics expression like addition, subtraction, multiplication, division.
 
-**Dᴇᴛᴀɪs:**
-- Sᴜᴘᴘᴏʀᴛs ʙᴀsɪᴄ ᴀʀɪᴛʜᴍᴇᴛɪᴄ ᴏᴘᴇʀᴀᴛɪᴏɴs: ᴀᴅᴅɪᴛɪᴏɴ (+), sᴜʙᴛʀᴀᴄᴛɪᴏɴ (-), ᴍᴜᴛɪᴘɪᴄᴀᴛɪᴏɴ (*), ᴀɴᴅ ᴅɪᴠɪsɪᴏɴ (/).
-- Rᴇᴛᴜʀɴs ᴛʜᴇ ʀᴇsᴜᴛ ᴏғ ᴛʜᴇ ᴇxᴘʀᴇssɪᴏɴ.
-- Dɪsᴘᴀʏs "Iɴᴠᴀɪᴅ ᴇxᴘʀᴇssɪᴏɴ" ɪғ ᴛʜᴇ ᴇxᴘʀᴇssɪᴏɴ ɪs ɴᴏᴛ ᴠᴀɪᴅ.
+» Command for Google search 
 
-## Gᴏᴏɢᴇ Sᴇᴀʀᴄʜ Cᴏᴍᴍᴀɴᴅ Hᴇᴘ
+● /spg (query)
 
-### 1. /sᴘɢ [ǫᴜᴇʀʏ]
-**Dᴇsᴄʀɪᴘᴛɪᴏɴ:**
-Sᴇᴀʀᴄʜᴇs Gᴏᴏɢᴇ ᴀɴᴅ ᴅɪsᴘᴀʏs sᴇᴀʀᴄʜ ʀᴇsᴜᴛs.
-
-**Usᴀɢᴇ:**
-/sᴘɢ [ǫᴜᴇʀʏ]
-
-**Dᴇᴛᴀɪs:**
-- Sᴇᴀʀᴄʜᴇs Gᴏᴏɢᴇ ғᴏʀ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ǫᴜᴇʀʏ.
-- Dɪsᴘᴀʏs sᴇᴀʀᴄʜ ʀᴇsᴜᴛs ᴡɪᴛʜ ᴛɪᴛᴇs ᴀɴᴅ ɪɴᴋs.
-- Sᴜᴘᴘᴏʀᴛs ᴘᴀɢɪɴᴀᴛɪᴏɴ ᴡɪᴛʜ ɴᴇxᴛ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴠɪᴇᴡ ᴍᴏʀᴇ ʀᴇsᴜᴛs.
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 __mod_name__ = "Maths"
 
 
 __help__ = """
-## Rᴇᴘᴏ Sᴏᴜʀᴄᴇ Mᴏᴅᴜᴇ
+» Available commands for Source
 
-Tʜɪs ᴍᴏᴅᴜᴇ ᴘʀᴏᴠɪᴅᴇs ᴜᴛɪɪᴛʏ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴜsᴇʀs ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ.
+● /repo: get the link to the bot's source code repository.
 
-### Cᴏᴍᴍᴀɴᴅs:
-- `/ʀᴇᴘᴏ`: Gᴇᴛ ᴛʜᴇ ɪɴᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ's sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ.
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 __mod_name__ = "Source"
+
+
+__help__ = """
+» Available commands for Afk 
+
+● /afk: this will set u afk.
+● /afk <reason>: this will set u afk with reason.
+● /afk <replied to photo or sticker>: this will set u afk with photo or sticker
+● /afk <replied to photo or sticker> reason: this will set u afk with photo or sticker along of reason
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
+
+__mod_name__ = "Afk"
 
 
