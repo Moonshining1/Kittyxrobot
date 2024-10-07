@@ -113,9 +113,12 @@ async def close_send_photo(_, CallbackQuery):
 
 
 __help__ = """
-*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ *
- ❍ /bug *:* ᴛᴏ ʀᴇᴩᴏʀᴛ ᴀ ʙᴜɢ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.
- 
- ☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+» Available commands for Bug 
+
+● /bug : to report a bug in support chat.
+● /feedback : to provide your valuable feedback about bot.
+● /botsupport : this will inform bot developer to come at your group and solve your query.
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
-__mod_name__ = "Bᴜɢ"
+__mod_name__ = "Bug"
