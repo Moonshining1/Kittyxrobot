@@ -90,3 +90,31 @@ dispatcher.add_handler(RESTART_HANDLER)
 
 
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER, ALLOWGROUPS_HANDLER]
+
+__mod_name__ = "Dev"
+__help__ = """
+» Available commands for Devs 
+
+● /groups: List gc :)
+● /stats: Shows overall bot stats
+● /getchats: Gets a common gc for user.
+● /ginfo username/link/ID: Pulls info panel for entire group
+● /ignore: Blacklists a user from using the bot entirely
+● /lockdown <off/on>: Toggles bot adding to groups
+● /notice: Removes user from blacklist
+● /ignoredlist: Lists ignored users
+● /listmodules: List all modules
+● /load modulename: Loads the said module to memory without restarting.
+● /unload modulename: Loads the said module from memory.
+● /debug <on/off>: Logs commands to updates.txt
+● /logs: Run this in support group to get logs in pm
+● /eval: Self explanatory
+● /sh: Runs shell command
+● /clearlocals: As the name goes
+● /dbcleanup: Removes deleted accs and groups from db
+● /py: Runs python code
+● /gignoreblue: <word>: Globally ignore.
+● /ungignoreblue: <word>: Remove said command from global cleaning list
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
+"""
