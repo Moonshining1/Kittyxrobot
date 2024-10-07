@@ -91,7 +91,7 @@ dispatcher.add_handler(RESTART_HANDLER)
 
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER, ALLOWGROUPS_HANDLER]
 
-__mod_name__ = "Dev"
+__mod_name__ = "Devs"
 __help__ = """
 » Available commands for Devs 
 
