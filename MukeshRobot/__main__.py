@@ -290,33 +290,35 @@ def error_callback(update: Update, context: CallbackContext):
         # handle all other telegram related errors
 
 
-def help_button(update: Update, context: CallbackContext):
+def help_button(update, context):
     query = update.callback_query
-    mod_match = re.match(r"help_module\(.+?)\", query.data)
-    prev_match = re.match(r"help_prev\(.+?)\", query.data)
-    next_match = re.match(r"help_next\(.+?)\", query.data)
+    mod_match = re.match(r"help_module\((.+?)\)", query.data)
+    prev_match = re.match(r"help_prev\((.+?)\)", query.data)
+    next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
+
+    print(query.message.chat.id)
 
     try:
         if mod_match:
             module = mod_match.group(1)
             text = (
-                f"» *Available commands for {HELPABLE[module].__mod_name__}*:\n"
+                "» *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ​​* *{}* :\n".format(
+                    HELPABLE[module].__mod_name__
+                )
                 + HELPABLE[module].__help__
             )
-            query.message.edit_text(
-                text,
+            query.message.edit_caption(text,
                 parse_mode=ParseMode.MARKDOWN,
+                
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="Support", callback_data="mukesh_support")]]
+                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")]]
                 ),
             )
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
-            query.message.edit_text(
-                HELP_STRINGS,
+            query.message.edit_caption(HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(curr_page - 1, HELPABLE, "help")
@@ -325,8 +327,7 @@ def help_button(update: Update, context: CallbackContext):
 
         elif next_match:
             next_page = int(next_match.group(1))
-            query.message.edit_text(
-                HELP_STRINGS,
+            query.message.edit_caption(HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(next_page + 1, HELPABLE, "help")
@@ -334,15 +335,17 @@ def help_button(update: Update, context: CallbackContext):
             )
 
         elif back_match:
-            query.message.edit_text(
-                HELP_STRINGS,
+            query.message.edit_caption(HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, HELPABLE, "help")
                 ),
             )
 
-        context.bot.answer_callback_query(query.id)  # Ensure no spinny circle
+        # ensure no spinny white circle
+        context.bot.answer_callback_query(query.id)
+        # query.message.delete()
+
     except BadRequest:
         pass
 
