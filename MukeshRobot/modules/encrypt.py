@@ -32,9 +32,11 @@ async def decrypt(bot, message):
         await message.reply_text(f"{e}")
 
 
-__mod_name__ = "ᴘᴀssᴡᴏʀᴅ"
+__mod_name__ = "Password"
 
 __help__ = """
+» Available commands for Password 
+
 *ᴄᴏɴᴠᴇʀᴛs*
  ❍ /encrypt*:* ᴇɴᴄʀʏᴘᴛs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ
  ❍ /decrypt*:* ᴅᴇᴄʀʏᴘᴛs ᴘʀᴇᴠɪᴏᴜsʟʏ ᴇᴄʀʏᴘᴛᴇᴅ ᴛᴇxᴛ
@@ -45,5 +47,5 @@ __help__ = """
  ❍ /password *:*  ɢɪᴠᴇ ʟᴇɴɢᴛʜ ᴏғ ᴘᴀssᴡᴏʀᴅ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ
  ❍ /uselessfact *:* Gᴇɴᴇʀᴀᴛᴇ  Rᴀᴍᴅᴏᴍ Usᴇʟᴇss Fᴀᴄᴛ
 
- ☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
