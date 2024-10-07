@@ -122,8 +122,12 @@ def end_attendance_cmd(update, context):
         context.chat_data['attendees'].clear()
 
 __help__ = """
-❍ `/attendance`* ➛* ꜱᴛᴀʀᴛ ᴛʜᴇ ᴀᴛᴛᴇɴᴅᴀɴᴄᴇ
-❍ `/end_attendance`* ➛* ᴇɴᴅ ᴛʜᴇ ᴀᴛᴛᴇɴᴅᴀɴᴄᴇ
+» Available commands for present 
+
+● `/attendance`* ➛* ꜱᴛᴀʀᴛ ᴛʜᴇ ᴀᴛᴛᴇɴᴅᴀɴᴄᴇ
+● `/end_attendance`* ➛* ᴇɴᴅ ᴛʜᴇ ᴀᴛᴛᴇɴᴅᴀɴᴄᴇ
+
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
 
 START_ATTENDANCE = DisableAbleCommandHandler("attendance", start_attendance)
@@ -136,6 +140,6 @@ dispatcher.add_handler(MARK_ATTENDANCE)
 dispatcher.add_handler(END_ATTENDANCE)
 dispatcher.add_handler(END_ATTENDANCE_CMD)
 
-__mod_name__ = "ᴘʀᴇsᴇɴᴛ"
+__mod_name__ = "Present"
 __command_list__ = ["attendance", "end_attendance"]
 __handlers__ = [START_ATTENDANCE, END_ATTENDANCE, END_ATTENDANCE_CMD]
