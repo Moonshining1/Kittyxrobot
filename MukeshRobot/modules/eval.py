@@ -155,12 +155,14 @@ dispatcher.add_handler(EVAL_HANDLER)
 dispatcher.add_handler(EXEC_HANDLER)
 dispatcher.add_handler(CLEAR_HANDLER)
 
-__mod_name__ = "Eᴠᴀʟ"
+__mod_name__ = "Eval"
 __help__ = f"""
+» Available commands for Eval
+
 ★ᴏᴡɴᴇʀ ᴄᴍᴅ ★
 ★ /eval :- to evaluate simple code
 ★ /ex :-  to execute code
 ★ /clear :- to run clear cmd
 
-☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
 """
