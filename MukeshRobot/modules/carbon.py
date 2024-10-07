@@ -29,13 +29,12 @@ async def carbon_func(_, message):
     await m.delete()
     carbon.close()
 
-__mod_name__ = "Cᴀʀʙᴏɴ"
+__mod_name__ = "Carbon"
 
 __help__ = """
+» Available commands for Carbon 
 
-ᴍᴀᴋᴇs ᴀ ᴄᴀʀʙᴏɴ ᴏғ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜ.
+● /carbon : makes carbon of the given text.
 
-❍ /carbon *:* ᴍᴀᴋᴇs ᴄᴀʀʙᴏɴ ɪғ ʀᴇᴩʟɪᴇᴅ ᴛᴏ ᴀ ᴛᴇxᴛ
-
-☆✧....𝐁𝐘🫧 » [☄️𝐌ᴏᴏɴ🌙](https://t.me/Moonshining2)....🥀🥀✧☆
+/⁠ᐠ⁠｡⁠ꞈ⁠｡⁠ᐟ⁠\
  """
