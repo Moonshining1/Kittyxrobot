@@ -185,7 +185,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="◁", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="◀", callback_data="help_back")]]
                     ),
                 )
             elif args[0].lower() == "markdownhelp":
@@ -416,7 +416,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_"),
+                        InlineKeyboardButton(text="◀", callback_data="mukesh_"),
                     ],
                 ]
             ),
@@ -549,7 +549,7 @@ For more info about Meowster updates check website 🎄👀""",parse_mode=ParseM
                         InlineKeyboardButton(text="👩‍💻 Developer 👩‍💻", callback_data="advance_help"),
                         InlineKeyboardButton(text="💡 Github 💡", url="https://t.me/pwmbothub") 
                     ],
-                    [InlineKeyboardButton(text="◁", callback_data="mukesh_"),]
+                    [InlineKeyboardButton(text="◀", callback_data="mukesh_"),]
                ]
             ),
         )
@@ -600,7 +600,7 @@ For more info about meowster updates check support 🎄👀
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="Main_help"),
+                        InlineKeyboardButton(text="◀", callback_data="Main_help"),
                     ],
                 ]
             ),
@@ -856,7 +856,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")]]
+                [[InlineKeyboardButton(text="◀", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")]]
             ),
         )
 
@@ -927,7 +927,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="◁",
+                                text="◀",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
