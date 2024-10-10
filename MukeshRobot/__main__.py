@@ -69,10 +69,6 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-PM_START_TEX = """
-ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
-"""
-
 
 PM_START_TEXT = """ 
 *Hi* {} 
@@ -206,16 +202,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             
             x=update.effective_message.reply_sticker(
-                "CAACAgUAAx0Cfsvj5QABAWR9ZmFr8V3QGaYlgSf9TQdBqoKdNg0AAskKAAIaV_FW3DtablnaU9Q1BA")
-            x.delete()
-            usr = update.effective_user
-            lol = update.effective_message.reply_text(
-                PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
-            )
-            time.sleep(0.4)
-            lol.edit_text("🐳")
-            time.sleep(0.4)
-            lol.delete()
+                "CAACAgUAAxkBAAEBmL1nBos4F1-tUjWNnjl5r5cne-xpCQACHgoAAsmuGVVnKBvEVZZMvB4E")
             
             update.effective_message.reply_photo(START_IMG,PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -303,7 +290,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "» *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ​​* *{}* :\n".format(
+                "» *Available commans for​​* *{}* :\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -312,7 +299,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")]]
+                    [[InlineKeyboardButton(text="Back", callback_data="help_back"),InlineKeyboardButton(text="Support", callback_data="mukesh_support")]]
                 ),
             )
 
@@ -380,15 +367,15 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ", callback_data="advance_help"
+                            text="👨‍💻Developer", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
-                            text="🥀sᴏᴜʀᴄᴇ",
+                            text="🥀Source",
                             callback_data="source_",
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back"),
+                        InlineKeyboardButton(text="• Home •", callback_data="mukesh_back"),
                     ],
                 ]
             ),
@@ -416,7 +403,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◀", callback_data="mukesh_"),
+                        InlineKeyboardButton(text="• Back •", callback_data="mukesh_"),
                     ],
                 ]
             ),
@@ -449,7 +436,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="Basic guide 📃", callback_data="basic_help"),
                         InlineKeyboardButton(text="Donate ❄", callback_data="donation_help") 
                     ],
-                    [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
+                    [InlineKeyboardButton(text="• Home •", callback_data="mukesh_back")]
                 ]
             ),
         )
@@ -518,7 +505,7 @@ I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonsh
                         InlineKeyboardButton(text="🎄 Galaxy 🎄", callback_data="moon_"),
                         InlineKeyboardButton(text="⭐ Help ⭐", callback_data="Main_help")
                     ],
-                    [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back"),]
+                    [InlineKeyboardButton(text="• Home •", callback_data="mukesh_back"),]
                ]
             ),
         )
@@ -543,13 +530,13 @@ For more info about Meowster updates check website 🎄👀""",parse_mode=ParseM
                [
                     [
                         InlineKeyboardButton(text="⭐ Support ⭐", url=f"https://t.me/+vhymK8YMHA5iNTU9"),
-                        InlineKeyboardButton(text="🥀 Update 🥀", url=f"t.me/kittyxupdates")
+                        InlineKeyboardButton(text="🥀 Updates 🥀", url=f"t.me/kittyxupdates")
                     ],                    
                     [
                         InlineKeyboardButton(text="👩‍💻 Developer 👩‍💻", callback_data="advance_help"),
                         InlineKeyboardButton(text="💡 Github 💡", url="https://t.me/pwmbothub") 
                     ],
-                    [InlineKeyboardButton(text="◀", callback_data="mukesh_"),]
+                    [InlineKeyboardButton(text="• Back •", callback_data="mukesh_"),]
                ]
             ),
         )
@@ -565,7 +552,7 @@ Your small amount can help us and meowster to grow more ✨""",parse_mode=ParseM
             reply_markup=InlineKeyboardMarkup(
                 [ 
                     [
-                        InlineKeyboardButton(text="• Dᴏɴᴀᴛᴇ •", url="https://t.me/kittyxupdates"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• Donate •", url="https://t.me/kittyxupdates"),InlineKeyboardButton(text="• Support •", callback_data="mukesh_support")
                     ]
                 ]
             ),
@@ -596,11 +583,11 @@ For more info about meowster updates check support 🎄👀
                             text="Developer 👨‍💻", callback_data="advance_help"
                         ),
                         InlineKeyboardButton(
-                            text="Share your query💡", url="https://t.me/pwmbothub"
+                            text="Share ur query💡", url="https://t.me/pwmbothub"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◀", callback_data="Main_help"),
+                        InlineKeyboardButton(text="• Back •", callback_data="Main_help"),
                     ],
                 ]
             ),
@@ -621,11 +608,11 @@ def Source_about_callback(update: Update, context: CallbackContext):
     if query.data == "source_":
         query.message.edit_caption(
             f"""
-*ʜᴇʏ,
- ᴛʜɪs ɪs {BOT_NAME},
-ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
+*Hey,
+ This is {BOT_NAME},
+an open source telegram group management bot.*
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://t.me/pwmbothub)
+*Here is my source code:* [Github](https://t.me/pwmbothub)
 
 Gaya tha kya yaha chhod ke 😂😂?
 """,
@@ -635,7 +622,7 @@ Gaya tha kya yaha chhod ke 😂😂?
                 [
                     [
                         InlineKeyboardButton(text="Developer 👩‍💻", callback_data="advance_help"),
-                        InlineKeyboardButton(text="• sᴏᴜʀᴄᴇ •", url=f"https://t.me/+vhymK8YMHA5iNTU9") 
+                        InlineKeyboardButton(text="• Source •", url=f"https://t.me/+vhymK8YMHA5iNTU9") 
                     ],
                     [InlineKeyboardButton(text="• Back •", callback_data="mukesh_")]
                 ]
@@ -705,7 +692,7 @@ Here is the help menu for Meowster music player ✨👀
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")
+                        InlineKeyboardButton(text=" • Back • ", callback_data="Music_"),InlineKeyboardButton(text="Support", callback_data="mukesh_support")
                     ]
                 ]
             ),
@@ -729,7 +716,7 @@ Here is the help menu for Meowster music player ✨👀
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• Back •", callback_data="Music_"),InlineKeyboardButton(text="Support", callback_data="mukesh_support")
                     ]
                 ]
             ),
@@ -753,7 +740,7 @@ Here is the help menu for Meowster music player ✨👀
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=" ʙᴀᴄᴋ ", callback_data="Music_"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")
+                        InlineKeyboardButton(text=" • Back • ", callback_data="Music_"),InlineKeyboardButton(text="Support", callback_data="mukesh_support")
                     ]
                 ]
             ),
@@ -856,7 +843,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◀", callback_data="help_back"),InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="mukesh_support")]]
+                [[InlineKeyboardButton(text="• Back •", callback_data="help_back"),InlineKeyboardButton(text="Support", callback_data="mukesh_support")]]
             ),
         )
 
