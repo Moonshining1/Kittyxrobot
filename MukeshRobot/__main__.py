@@ -74,7 +74,7 @@ PM_START_TEXT = """
 *Hi* {} 
 Nice to meet you !
 
-I am Meowster bot 😺 
+I am Meowsteric bot 😺 
 A powerful stable and cute telegram music and management bot.
 """
 
@@ -105,7 +105,7 @@ We provide 24×7 managment and music service so we also need some help for it, d
 • Upi id » Kittyxupdates 
 • You can also donate by contacting [developer](https://t.me/about_ur_moonshining/5) ✅
 
-Your small amount can help us and Meowster to grow more ✨"""
+Your small amount can help us and Meowsteric to grow more ✨"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -355,7 +355,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• Meowster v2.0 •", callback_data="expert_help"),
+                        InlineKeyboardButton(text="• Meowsteric v2.0 •", callback_data="expert_help"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -441,7 +441,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data=="basic_help":
-        query.message.edit_caption("""Hey This is a small and quick guide to meowster bot 🎉
+        query.message.edit_caption("""Hey This is a small and quick guide to meowsteric bot 🎉
 
 1. Click on the "Add me to your clan" button
 2. Select your group name.
@@ -492,7 +492,7 @@ Pɪɴɴᴇᴅ Mᴇssᴀɢᴇs
     elif query.data=="advance_help":
         query.message.edit_caption("""Hey,
 
-I am Meowster bot ✨
+I am Meowsteric bot ✨
 I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonshining/5) ❤.""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
@@ -524,7 +524,7 @@ I am created with love by my [🇲σ᭡፝֟ɳ🌙](https://t.me/About_ur_Moonsh
 • Added Ph logo as img and sticker.
 • Added inbuilt music system.
 
-For more info about Meowster updates check website 🎄👀""",parse_mode=ParseMode.MARKDOWN,
+For more info about Meowsteric updates check website 🎄👀""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                [
@@ -547,7 +547,7 @@ We provide 24×7 managment and music service so we also need some help for it, d
 • Upi id » @kittyxupdates
 • You can also donate by contacting [developer](https://t.me/about_ur_moonshining/5) ✅
 
-Your small amount can help us and meowster to grow more ✨""",parse_mode=ParseMode.MARKDOWN,
+Your small amount can help us and meowsteric to grow more ✨""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [ 
@@ -564,7 +564,7 @@ def Moon_about_callback(update: Update, context: CallbackContext):
             f"""
 Join our groups....🧊
 
-For more info about meowster updates check support 🎄👀
+For more info about meowsteric updates check support 🎄👀
 """,
             parse_mode=ParseMode.MARKDOWN,
             
@@ -575,7 +575,7 @@ For more info about meowster updates check support 🎄👀
                             text="Study 🥂", url=f"https://t.me/PWM_discussion"
                         ),
                         InlineKeyboardButton(
-                            text="Meowster updates🥀", url=f"t.me/kittyxupdates"
+                            text="Meowsteric updates🥀", url=f"t.me/kittyxupdates"
                         ),
                     ],
                     [
@@ -602,31 +602,21 @@ For more info about meowster updates check support 🎄👀
             
         )
 
-        
 def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
-        query.message.edit_caption(
-            f"""
-*Hey,
- This is {BOT_NAME},
-an open source telegram group management bot.*
-
-*Here is my source code:* [Github](https://t.me/pwmbothub)
-
-Gaya tha kya yaha chhod ke 😂😂?
-""",
-            parse_mode=ParseMode.MARKDOWN,
-            
+        gif_url = "https://files.catbox.moe/6bslyh.mp4"  
+        query.message.reply_animation(
+            animation=gif_url,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(text="Developer 👩‍💻", callback_data="advance_help"),
-                        InlineKeyboardButton(text="• Source •", url=f"https://t.me/+vhymK8YMHA5iNTU9") 
+                        InlineKeyboardButton(text="• Source •", url="https://t.me/+vhymK8YMHA5iNTU9")
                     ],
                     [InlineKeyboardButton(text="• Back •", callback_data="mukesh_")]
                 ]
-            ),
+            )
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
@@ -643,9 +633,9 @@ def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Music_":
         query.message.edit_caption(f"""
- Hi, i am a Meowster X player ...
+ Hi, i am a Meowsteric X player ...
 
-Here is the help menu for Meowster music player ✨👀
+Here is the help menu for Meowsteric music player ✨👀
 """,
             parse_mode=ParseMode.MARKDOWN,
             
@@ -1063,7 +1053,7 @@ def main():
                     [
                         InlineKeyboardButton(
                             text="+ Add me to your clan darlo +",
-                            url="https://t.me/Meowsterxbot?startgroup=true"
+                            url="https://t.me/Meowstericxbot?startgroup=true"
                             )
                        ]
                 ]
@@ -1074,7 +1064,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 photo=f"{START_IMG}",
                 caption=f"""
-✨ [Meowster bot 😺](https://t.me/Meowsterxbot) I am alive 🖤!
+✨ [Meowsteric bot 😺](https://t.me/Meowsterxbot) I am alive 🖤!
 
 {BOT_NAME} system stats :
 
@@ -1083,7 +1073,7 @@ def main():
 **❄️  Cpu:** `{tlhver}`
 **🔮  Disk:** `{pyrover}`
 
-Made [Meowster bot 😺](https://t.me/Meowsterxbot) with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
+Made [Meowsteric bot 😺](https://t.me/Meowsterxbot) with love by ᴅᴇᴠᴇʟᴏᴘᴇʀs✨🥀
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
             )
