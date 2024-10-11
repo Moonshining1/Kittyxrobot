@@ -605,18 +605,13 @@ For more info about meowsteric updates check support 🎄👀
 def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
-        gif_url = "https://files.catbox.moe/6bslyh.mp4"  
+        gif_url = "https://files.catbox.moe/6bslyh.mp4"
+        user_mention = f"[{query.from_user.first_name}](tg://user?id={query.from_user.id})"
+        
         query.message.reply_animation(
             animation=gif_url,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="Developer 👩‍💻", callback_data="advance_help"),
-                        InlineKeyboardButton(text="• Source •", url="https://t.me/+vhymK8YMHA5iNTU9")
-                    ],
-                    [InlineKeyboardButton(text="• Back •", callback_data="mukesh_")]
-                ]
-            )
+            caption=f"Close by {user_mention}",
+            parse_mode="Markdown",
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
