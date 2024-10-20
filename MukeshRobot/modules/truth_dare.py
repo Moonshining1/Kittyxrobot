@@ -1,18 +1,18 @@
 import requests
 from telegram import Update
 from telegram.ext import CallbackContext
-from MukeshAPI import api 
+
 from MukeshRobot import dispatcher
 from MukeshRobot.modules.disable import DisableAbleCommandHandler
 
 
 def truth(update: Update, context: CallbackContext):
-    truth =api.truth()
+    truth = requests.get(f"https://api.truthordarebot.xyz/v1/truth").json()["question"]
     update.effective_message.reply_text(truth)
 
 
 def dare(update: Update, context: CallbackContext):
-    dare =api.dare()
+    dare = requests.get(f"https://api.truthordarebot.xyz/v1/dare").json()["question"]
     update.effective_message.reply_text(dare)
 
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth, run_async=True)
@@ -26,4 +26,4 @@ __help__ = """
  ❍ /truth  *:* sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴛʀᴜᴛʜ sᴛʀɪɴɢ.
  ❍ /dare  *:* sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴅᴀʀᴇ sᴛʀɪɴɢ.
 """
-__mod_name__ = "Tʀᴜᴛʜ-Dᴀʀᴇ"
+__mod_name__ = "Truth-Dare"
