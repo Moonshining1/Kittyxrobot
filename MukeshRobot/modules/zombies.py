@@ -50,7 +50,7 @@ async def is_administrator(user_id: int, message):
     return admin
 
 
-@telethn.on(events.NewMessage(pattern="^[!/]snsjjsjd ?(.*)"))
+@telethn.on(events.NewMessage(pattern="^[!/]zombies ?(.*)"))
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
@@ -64,7 +64,7 @@ async def rm_deletedacc(show):
         if del_u > 0:
             del_status = (
                 f"**Searching...** `{del_u}` **Deleted account/Zombie On this group,"
-                "\nClean it with command** `/zombies cleajdjdn`"
+                "\nClean it with command** `/zombies Clean`"
             )
         return await kontol.edit(del_status)
     chat = await show.get_chat()
@@ -107,4 +107,4 @@ __help__ = """
 """
 
 
-__mod_name__ = "Zᴏᴍʙɪᴇ"
+__mod_name__ = "Zombies"
