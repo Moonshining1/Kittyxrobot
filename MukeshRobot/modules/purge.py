@@ -16,7 +16,7 @@ async def purge_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [1087968824]:
+    ) and event.from_id not in [7297381612]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
@@ -54,7 +54,7 @@ async def delete_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [1087968824]:
+    ) and event.from_id not in [7297381612]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
@@ -74,7 +74,7 @@ async def spurge_messages(event):
         return
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [1087968824]:
+    ) and event.from_id not in [7297381612]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
@@ -116,6 +116,6 @@ SPURGE_HANDLER = spurge_messages, events.NewMessage(pattern="^[!/]spurge$")
 telethn.add_event_handler(*PURGE_HANDLER)
 telethn.add_event_handler(*DEL_HANDLER)
 telethn.add_event_handler(*SPURGE_HANDLER)
-__mod_name__ = "Pᴜʀɢᴇ"
+__mod_name__ = "Purge"
 __command_list__ = ["del", "purge","spurge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER,SPURGE_HANDLER]
